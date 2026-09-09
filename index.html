@@ -3,27 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ironbloom Studio | Boutique Strength & Conditioning London</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23111111'/><path d='M30 35H40V65H30Z' fill='%23ff5e3a'/><path d='M60 35H70V65H60Z' fill='%23ff5e3a'/><rect x='35' y='45' width='30' height='10' fill='%23ff5e3a'/></svg>">
-    
+    <title>Akhara Strength Studio | Boutique Strength & Conditioning, Karachi</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230c0b09'/><path d='M30 30 L70 30 L70 40 L50 70 L30 40 Z' fill='%23c9a24b'/></svg>">
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        matteBlack: '#111111',
-                        coralOrange: '#ff5e3a',
-                        coralHover: '#e04a27',
-                        offWhite: '#f4f4f2',
-                        darkCard: '#1a1a1a',
-                        darkBorder: '#2a2a2a'
+                        ink: '#0c0b09',
+                        panel: '#161310',
+                        panel2: '#1e1a15',
+                        gold: '#c9a24b',
+                        goldSoft: '#8f7239',
+                        goldBright: '#e3c07c',
+                        ivory: '#f3ede0',
+                        line: '#2c271e',
+                        muted: '#a99c85'
                     },
                     fontFamily: {
-                        condensed: ['"Bebas Neue"', 'sans-serif'],
-                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
+                        display: ['"Fraunces"', 'serif'],
+                        sans: ['"Manrope"', 'sans-serif']
                     }
                 }
             }
@@ -31,439 +34,374 @@
     </script>
     <style>
         body {
-            background-color: #111111;
-            color: #f4f4f2;
-            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0c0b09;
+            color: #f3ede0;
+            font-family: 'Manrope', sans-serif;
             overflow-x: hidden;
         }
-        h1, h2, h3, h4, h5, h6, .font-condensed {
-            font-family: 'Bebas Neue', sans-serif;
-            letter-spacing: 0.05em;
-        }
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #111111;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #ff5e3a;
-            border-radius: 4px;
-        }
-        @keyframes marquee {
-            0% { transform: translateX(0%); }
-            100% { transform: translateX(-50%); }
-        }
-        .animate-marquee {
-            display: flex;
-            width: 200%;
-            animation: marquee 25s linear infinite;
-        }
-        .animate-marquee:hover {
-            animation-play-state: paused;
-        }
-        .glow-effect {
-            box-shadow: 0 0 30px rgba(255, 94, 58, 0.15);
-        }
+        h1, h2, h3, h4, .font-display { font-family: 'Fraunces', serif; letter-spacing: -0.01em; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0c0b09; }
+        ::-webkit-scrollbar-thumb { background: #8f7239; border-radius: 0; }
+        .gold-photo { filter: sepia(18%) saturate(85%) brightness(78%) contrast(105%); }
+        .rule { background: linear-gradient(90deg, transparent, #c9a24b, transparent); height: 1px; }
+        @keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+        .ticker { display: flex; width: 200%; animation: ticker 32s linear infinite; }
+        .ticker:hover { animation-play-state: paused; }
+        .num { font-variant-numeric: tabular-nums; }
     </style>
 </head>
-<body class="bg-matteBlack text-offWhite antialiased selection:bg-coralOrange selection:text-matteBlack">
+<body class="bg-ink text-ivory antialiased selection:bg-gold selection:text-ink">
 
-    <div class="bg-coralOrange text-matteBlack font-condensed tracking-widest text-sm py-2 overflow-hidden whitespace-nowrap select-none font-bold uppercase">
-        <div class="animate-marquee flex space-x-12">
-            <span>⚡ First class free</span>
-            <span>🔥 New member offer active</span>
-            <span>🏆 Rated #1 studio in London</span>
-            <span>💪 Elite strength & conditioning</span>
-            <span>⚡ First class free</span>
-            <span>🔥 New member offer active</span>
-            <span>🏆 Rated #1 studio in London</span>
-            <span>💪 Elite strength & conditioning</span>
+    <div class="bg-ink border-b border-line text-gold text-xs py-2 overflow-hidden whitespace-nowrap select-none font-medium tracking-wide">
+        <div class="ticker flex space-x-16">
+            <span>Trial class complimentary for new members</span>
+            <span>DHA Phase 6, Karachi</span>
+            <span>Reserve your spot — limited to 14 per class</span>
+            <span>Trial class complimentary for new members</span>
+            <span>DHA Phase 6, Karachi</span>
+            <span>Reserve your spot — limited to 14 per class</span>
         </div>
     </div>
 
-    <nav id="navbar" class="sticky top-0 z-50 bg-matteBlack/95 backdrop-blur-md border-b border-darkBorder transition-all duration-300">
+    <nav id="navbar" class="sticky top-0 z-50 bg-ink/95 backdrop-blur-md border-b border-line">
         <div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between">
             <a href="#home" class="flex items-center space-x-3 group">
-                <div class="w-10 h-10 bg-darkCard border border-coralOrange/50 flex items-center justify-center group-hover:border-coralOrange transition duration-300">
-                    <svg class="w-6 h-6 text-coralOrange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M6 4v16M18 4v16M2 8h4M2 16h4M18 8h4M18 16h4M6 12h12"></path>
-                    </svg>
-                </div>
-                <div class="flex flex-col">
-                    <span class="font-condensed text-3xl tracking-wider text-offWhite uppercase leading-none">Iron<span class="text-coralOrange">bloom</span></span>
-                    <span class="text-[9px] uppercase tracking-[0.25em] text-gray-400 font-mono">London Est. 2019</span>
+                <svg class="w-9 h-9 text-gold" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25 25H75L58 55L75 85H25L42 55L25 25Z" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+                </svg>
+                <div class="flex flex-col leading-none">
+                    <span class="font-display text-2xl text-ivory">Akhara</span>
+                    <span class="text-[9px] uppercase tracking-[0.2em] text-muted">Strength Studio · Karachi</span>
                 </div>
             </a>
-            
-            <div class="hidden lg:flex items-center space-x-8 text-sm font-semibold tracking-wider uppercase">
-                <a href="#home" class="hover:text-coralOrange transition">Home</a>
-                <a href="#classes" class="hover:text-coralOrange transition">Classes</a>
-                <a href="#trainers" class="hover:text-coralOrange transition">Trainers</a>
-                <a href="#membership" class="hover:text-coralOrange transition">Membership</a>
-                <a href="#results" class="hover:text-coralOrange transition">Results</a>
-                <a href="#contact" class="hover:text-coralOrange transition">Contact</a>
+
+            <div class="hidden lg:flex items-center space-x-9 text-sm text-ivory/90">
+                <a href="#home" class="hover:text-gold transition">Home</a>
+                <a href="#classes" class="hover:text-gold transition">Classes</a>
+                <a href="#trainers" class="hover:text-gold transition">Coaches</a>
+                <a href="#membership" class="hover:text-gold transition">Membership</a>
+                <a href="#results" class="hover:text-gold transition">Results</a>
+                <a href="#contact" class="hover:text-gold transition">Visit Us</a>
             </div>
 
-            <div class="hidden lg:flex items-center space-x-4">
-                <a href="#trial" class="px-6 py-3 bg-coralOrange text-matteBlack text-xs uppercase tracking-widest hover:bg-coralHover hover:text-white transition duration-300 font-extrabold shadow-lg shadow-coralOrange/20">Book a Free Class</a>
+            <div class="hidden lg:flex items-center">
+                <a href="#trial" class="px-6 py-3 border border-gold text-gold text-xs uppercase tracking-widest hover:bg-gold hover:text-ink transition duration-300 font-semibold">Book a Free Class</a>
             </div>
 
-            <button id="mobile-menu-btn" class="lg:hidden text-offWhite text-2xl focus:outline-none">
+            <button id="mobile-menu-btn" class="lg:hidden text-ivory text-xl focus:outline-none">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
 
-        <div id="mobile-menu" class="hidden lg:hidden bg-darkCard text-offWhite px-6 py-6 space-y-4 border-b border-darkBorder">
-            <a href="#home" class="block hover:text-coralOrange font-condensed tracking-wider text-xl uppercase">Home</a>
-            <a href="#classes" class="block hover:text-coralOrange font-condensed tracking-wider text-xl uppercase">Classes</a>
-            <a href="#trainers" class="block hover:text-coralOrange font-condensed tracking-wider text-xl uppercase">Trainers</a>
-            <a href="#membership" class="block hover:text-coralOrange font-condensed tracking-wider text-xl uppercase">Membership</a>
-            <a href="#results" class="block hover:text-coralOrange font-condensed tracking-wider text-xl uppercase">Results</a>
-            <a href="#contact" class="block hover:text-coralOrange font-condensed tracking-wider text-xl uppercase">Contact</a>
-            <a href="#trial" class="inline-block w-full text-center py-3.5 bg-coralOrange text-matteBlack font-bold uppercase text-xs tracking-widest">Book a Free Class</a>
+        <div id="mobile-menu" class="hidden lg:hidden bg-panel text-ivory px-6 py-6 space-y-4 border-b border-line">
+            <a href="#home" class="block hover:text-gold font-display text-xl">Home</a>
+            <a href="#classes" class="block hover:text-gold font-display text-xl">Classes</a>
+            <a href="#trainers" class="block hover:text-gold font-display text-xl">Coaches</a>
+            <a href="#membership" class="block hover:text-gold font-display text-xl">Membership</a>
+            <a href="#results" class="block hover:text-gold font-display text-xl">Results</a>
+            <a href="#contact" class="block hover:text-gold font-display text-xl">Visit Us</a>
+            <a href="#trial" class="inline-block w-full text-center py-3.5 border border-gold text-gold font-semibold uppercase text-xs tracking-widest">Book a Free Class</a>
         </div>
     </nav>
 
-    <header id="home" class="relative h-[90vh] min-h-[650px] flex items-center justify-center text-offWhite overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=2000&q=80" alt="Gym Workout Action" class="w-full h-full object-cover scale-105 brightness-50">
-            <div class="absolute inset-0 bg-gradient-to-t from-matteBlack via-matteBlack/60 to-transparent"></div>
-        </div>
+    <header id="home" class="relative min-h-[85vh] flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 grid grid-cols-1 lg:grid-cols-2 gap-0 w-full">
+            <div class="py-20 lg:pr-16 flex flex-col justify-center order-2 lg:order-1">
+                <span class="text-xs uppercase tracking-[0.25em] text-gold font-semibold mb-5">Boutique Strength & Conditioning · DHA, Karachi</span>
+                <h1 class="font-display text-5xl sm:text-6xl lg:text-[4.2rem] font-medium leading-[1.05] mb-6 text-ivory">
+                    Every great lift<br>starts in the akhara.
+                </h1>
+                <p class="text-muted text-base sm:text-lg mb-10 max-w-lg leading-relaxed">
+                    Karachi's boutique training ground for serious strength. Barbell fundamentals, elite coaching, and a community that trains with intent — inside DHA's most disciplined studio.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#trial" class="px-8 py-4 bg-gold text-ink font-semibold uppercase text-xs tracking-widest hover:bg-goldBright transition text-center">Claim Free Trial Class</a>
+                    <a href="#classes" class="px-8 py-4 border border-line text-ivory font-semibold uppercase text-xs tracking-widest hover:border-gold hover:text-gold transition text-center">View Classes</a>
+                </div>
 
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 w-full py-12 text-center flex flex-col items-center">
-            <span class="inline-block uppercase tracking-[0.3em] text-xs text-coralOrange font-bold mb-4 bg-matteBlack/90 px-4 py-1.5 border border-coralOrange/40 glow-effect">Strength & Conditioning · Shoreditch, London</span>
-            <h1 class="font-condensed text-6xl sm:text-8xl lg:text-9xl font-extrabold tracking-wider leading-none mb-6 max-w-5xl uppercase">Forge Your Strength <br><span class="text-coralOrange">Break Your Limits</span></h1>
-            <p class="text-gray-300 text-base sm:text-xl font-light mb-10 max-w-2xl leading-relaxed">London’s premier boutique training facility. High-intensity conditioning, elite coaching, and a relentless community built for transformation.</p>
-            
-            <div class="flex flex-col sm:flex-row gap-4 mb-16 w-full sm:w-auto">
-                <a href="#trial" class="px-8 py-4 bg-coralOrange text-matteBlack font-extrabold uppercase text-xs tracking-widest hover:bg-coralHover hover:text-white transition shadow-xl shadow-coralOrange/30">Claim Free Trial</a>
-                <a href="#classes" class="px-8 py-4 bg-transparent border-2 border-offWhite text-offWhite font-extrabold uppercase text-xs tracking-widest hover:border-coralOrange hover:text-coralOrange transition">Explore Classes</a>
+                <div class="grid grid-cols-4 gap-6 mt-16 pt-8 border-t border-line max-w-lg">
+                    <div>
+                        <p class="font-display text-3xl text-gold num">900+</p>
+                        <p class="text-[10px] uppercase tracking-widest text-muted mt-1">Members</p>
+                    </div>
+                    <div>
+                        <p class="font-display text-3xl text-gold num">40+</p>
+                        <p class="text-[10px] uppercase tracking-widest text-muted mt-1">Classes / wk</p>
+                    </div>
+                    <div>
+                        <p class="font-display text-3xl text-gold num">12</p>
+                        <p class="text-[10px] uppercase tracking-widest text-muted mt-1">Coaches</p>
+                    </div>
+                    <div>
+                        <p class="font-display text-3xl text-gold num">6 Yrs</p>
+                        <p class="text-[10px] uppercase tracking-widest text-muted mt-1">In DHA</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-4xl bg-darkCard/90 backdrop-blur-md p-6 border border-darkBorder shadow-2xl">
-                <div class="text-center">
-                    <p class="font-condensed text-4xl sm:text-5xl font-bold text-coralOrange">1,400+</p>
-                    <p class="text-[10px] uppercase tracking-widest text-gray-400 font-semibold mt-1">Active Members</p>
-                </div>
-                <div class="text-center">
-                    <p class="font-condensed text-4xl sm:text-5xl font-bold text-coralOrange">65+</p>
-                    <p class="text-[10px] uppercase tracking-widest text-gray-400 font-semibold mt-1">Classes / Week</p>
-                </div>
-                <div class="text-center">
-                    <p class="font-condensed text-4xl sm:text-5xl font-bold text-coralOrange">18</p>
-                    <p class="text-[10px] uppercase tracking-widest text-gray-400 font-semibold mt-1">Elite Coaches</p>
-                </div>
-                <div class="text-center">
-                    <p class="font-condensed text-4xl sm:text-5xl font-bold text-coralOrange">7 Yrs</p>
-                    <p class="text-[10px] uppercase tracking-widest text-gray-400 font-semibold mt-1">Est. London</p>
-                </div>
+            <div class="relative order-1 lg:order-2 h-[45vh] lg:h-auto">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1400&q=80" alt="Akhara training floor" class="w-full h-full object-cover gold-photo">
+                <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/10 to-transparent lg:bg-gradient-to-r lg:from-ink lg:via-transparent lg:to-transparent"></div>
+                <div class="absolute left-0 top-0 bottom-0 w-px rule hidden lg:block"></div>
             </div>
         </div>
     </header>
 
-    <section class="py-12 bg-darkCard border-t border-b border-darkBorder">
+    <section class="py-10 bg-panel border-t border-b border-line">
         <div class="max-w-7xl mx-auto px-4 sm:px-8">
-            <p class="text-center text-xs uppercase tracking-[0.3em] text-gray-500 mb-8 font-bold">Featured In & Partnered With</p>
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-center font-condensed text-2xl tracking-widest text-gray-400 text-center opacity-70">
-                <div class="hover:text-coralOrange transition duration-300 cursor-default">MEN'S FITNESS</div>
-                <div class="hover:text-coralOrange transition duration-300 cursor-default">GQ UK</div>
-                <div class="hover:text-coralOrange transition duration-300 cursor-default">MEN'S HEALTH</div>
-                <div class="hover:text-coralOrange transition duration-300 cursor-default">WOD SCIENCE</div>
-                <div class="col-span-2 md:col-span-1 hover:text-coralOrange transition duration-300 cursor-default">EQUINIX LABS</div>
+            <p class="text-center text-[11px] uppercase tracking-[0.25em] text-muted mb-6">As featured in</p>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-center font-display text-xl tracking-wide text-muted/80 text-center">
+                <div class="hover:text-gold transition">Dawn Images</div>
+                <div class="hover:text-gold transition">Aurora</div>
+                <div class="hover:text-gold transition">Diva</div>
+                <div class="hover:text-gold transition">Hello! Pakistan</div>
+                <div class="col-span-2 md:col-span-1 hover:text-gold transition">The Current</div>
             </div>
         </div>
     </section>
 
     <section id="classes" class="py-24 max-w-7xl mx-auto px-4 sm:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-16">
-            <span class="uppercase tracking-[0.3em] text-xs text-coralOrange font-bold">High Performance</span>
-            <h2 class="font-condensed text-5xl sm:text-6xl font-extrabold mt-2 mb-4 uppercase">Training Disciplines</h2>
-            <div class="w-16 h-1 bg-coralOrange mx-auto"></div>
+        <div class="max-w-2xl mb-16">
+            <span class="text-xs uppercase tracking-[0.25em] text-gold font-semibold">Training Disciplines</span>
+            <h2 class="font-display text-4xl sm:text-5xl font-medium mt-3 text-ivory">Six ways to build strength</h2>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-darkCard border border-darkBorder hover:border-coralOrange transition duration-300 p-8 flex flex-col justify-between group">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-line">
+            <div class="bg-ink hover:bg-panel transition duration-300 p-8 flex flex-col justify-between group">
                 <div>
-                    <div class="flex justify-between items-center mb-6">
-                        <div class="w-12 h-12 bg-coralOrange text-matteBlack font-extrabold flex items-center justify-center text-xl shadow-md">
-                            <i class="fa-solid fa-dumbbell"></i>
-                        </div>
-                        <span class="text-[10px] uppercase tracking-widest bg-matteBlack px-3 py-1 text-coralOrange font-bold border border-coralOrange/30">Intensity: High</span>
+                    <div class="flex justify-between items-start mb-8">
+                        <i class="fa-solid fa-dumbbell text-gold text-xl"></i>
+                        <span class="text-[10px] uppercase tracking-widest text-muted border border-line px-2.5 py-1">High</span>
                     </div>
-                    <h3 class="font-condensed text-3xl font-bold mb-3 group-hover:text-coralOrange transition">Strength & Power</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6">Compound barbell movements, functional overload, and structured progressive overload to build raw strength.</p>
+                    <h3 class="font-display text-2xl mb-3 text-ivory">Strength & Power</h3>
+                    <p class="text-muted text-sm leading-relaxed">Barbell fundamentals and structured progressive overload — squat, press, pull, hinge.</p>
                 </div>
-                <div class="pt-6 border-t border-darkBorder flex justify-between items-center text-xs">
-                    <span class="text-gray-400 uppercase tracking-widest font-semibold"><i class="fa-regular fa-clock mr-1 text-coralOrange"></i> 55 Mins</span>
-                    <a href="#schedule" class="text-coralOrange uppercase font-bold tracking-widest hover:underline">See Schedule <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                <div class="pt-6 mt-6 border-t border-line flex justify-between items-center text-xs">
+                    <span class="text-muted"><i class="fa-regular fa-clock mr-1 text-gold"></i> 55 min</span>
+                    <a href="#schedule" class="text-gold font-semibold hover:underline">Schedule</a>
                 </div>
             </div>
 
-            <div class="bg-darkCard border border-darkBorder hover:border-coralOrange transition duration-300 p-8 flex flex-col justify-between group">
+            <div class="bg-ink hover:bg-panel transition duration-300 p-8 flex flex-col justify-between group">
                 <div>
-                    <div class="flex justify-between items-center mb-6">
-                        <div class="w-12 h-12 bg-coralOrange text-matteBlack font-extrabold flex items-center justify-center text-xl shadow-md">
-                            <i class="fa-solid fa-fire"></i>
-                        </div>
-                        <span class="text-[10px] uppercase tracking-widest bg-matteBlack px-3 py-1 text-coralOrange font-bold border border-coralOrange/30">Intensity: Max</span>
+                    <div class="flex justify-between items-start mb-8">
+                        <i class="fa-solid fa-fire text-gold text-xl"></i>
+                        <span class="text-[10px] uppercase tracking-widest text-muted border border-line px-2.5 py-1">Max</span>
                     </div>
-                    <h3 class="font-condensed text-3xl font-bold mb-3 group-hover:text-coralOrange transition">Metabolic HIIT</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6">High-energy intervals pairing rowers, ski ergs, kettlebells, and bodyweight to incinerate fat and boost VO2 max.</p>
+                    <h3 class="font-display text-2xl mb-3 text-ivory">Metabolic Conditioning</h3>
+                    <p class="text-muted text-sm leading-relaxed">Rowers, ski ergs, kettlebells and bodyweight circuits built to raise your ceiling.</p>
                 </div>
-                <div class="pt-6 border-t border-darkBorder flex justify-between items-center text-xs">
-                    <span class="text-gray-400 uppercase tracking-widest font-semibold"><i class="fa-regular fa-clock mr-1 text-coralOrange"></i> 45 Mins</span>
-                    <a href="#schedule" class="text-coralOrange uppercase font-bold tracking-widest hover:underline">See Schedule <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                <div class="pt-6 mt-6 border-t border-line flex justify-between items-center text-xs">
+                    <span class="text-muted"><i class="fa-regular fa-clock mr-1 text-gold"></i> 45 min</span>
+                    <a href="#schedule" class="text-gold font-semibold hover:underline">Schedule</a>
                 </div>
             </div>
 
-            <div class="bg-darkCard border border-darkBorder hover:border-coralOrange transition duration-300 p-8 flex flex-col justify-between group">
+            <div class="bg-ink hover:bg-panel transition duration-300 p-8 flex flex-col justify-between group">
                 <div>
-                    <div class="flex justify-between items-center mb-6">
-                        <div class="w-12 h-12 bg-coralOrange text-matteBlack font-extrabold flex items-center justify-center text-xl shadow-md">
-                            <i class="fa-solid fa-child-reaching"></i>
-                        </div>
-                        <span class="text-[10px] uppercase tracking-widest bg-matteBlack px-3 py-1 text-coralOrange font-bold border border-coralOrange/30">Intensity: Low</span>
+                    <div class="flex justify-between items-start mb-8">
+                        <i class="fa-solid fa-child-reaching text-gold text-xl"></i>
+                        <span class="text-[10px] uppercase tracking-widest text-muted border border-line px-2.5 py-1">Low</span>
                     </div>
-                    <h3 class="font-condensed text-3xl font-bold mb-3 group-hover:text-coralOrange transition">Mobility & Flow</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6">Deep tissue opening, joint articulation, and movement flow designed to bulletproof your body against injury.</p>
+                    <h3 class="font-display text-2xl mb-3 text-ivory">Mobility & Flow</h3>
+                    <p class="text-muted text-sm leading-relaxed">Joint work and movement flow that keeps your training body intact for the long run.</p>
                 </div>
-                <div class="pt-6 border-t border-darkBorder flex justify-between items-center text-xs">
-                    <span class="text-gray-400 uppercase tracking-widest font-semibold"><i class="fa-regular fa-clock mr-1 text-coralOrange"></i> 60 Mins</span>
-                    <a href="#schedule" class="text-coralOrange uppercase font-bold tracking-widest hover:underline">See Schedule <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                <div class="pt-6 mt-6 border-t border-line flex justify-between items-center text-xs">
+                    <span class="text-muted"><i class="fa-regular fa-clock mr-1 text-gold"></i> 60 min</span>
+                    <a href="#schedule" class="text-gold font-semibold hover:underline">Schedule</a>
                 </div>
             </div>
 
-            <div class="bg-darkCard border border-darkBorder hover:border-coralOrange transition duration-300 p-8 flex flex-col justify-between group">
+            <div class="bg-ink hover:bg-panel transition duration-300 p-8 flex flex-col justify-between group">
                 <div>
-                    <div class="flex justify-between items-center mb-6">
-                        <div class="w-12 h-12 bg-coralOrange text-matteBlack font-extrabold flex items-center justify-center text-xl shadow-md">
-                            <i class="fa-solid fa-hand-fist"></i>
-                        </div>
-                        <span class="text-[10px] uppercase tracking-widest bg-matteBlack px-3 py-1 text-coralOrange font-bold border border-coralOrange/30">Intensity: High</span>
+                    <div class="flex justify-between items-start mb-8">
+                        <i class="fa-solid fa-hand-fist text-gold text-xl"></i>
+                        <span class="text-[10px] uppercase tracking-widest text-muted border border-line px-2.5 py-1">High</span>
                     </div>
-                    <h3 class="font-condensed text-3xl font-bold mb-3 group-hover:text-coralOrange transition">Technical Boxing</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6">Heavy bag combinations, pad work, and footwork drills combined with core conditioning for elite hand speed.</p>
+                    <h3 class="font-display text-2xl mb-3 text-ivory">Technical Boxing</h3>
+                    <p class="text-muted text-sm leading-relaxed">Bag combinations, pad rounds and footwork drills paired with core conditioning.</p>
                 </div>
-                <div class="pt-6 border-t border-darkBorder flex justify-between items-center text-xs">
-                    <span class="text-gray-400 uppercase tracking-widest font-semibold"><i class="fa-regular fa-clock mr-1 text-coralOrange"></i> 50 Mins</span>
-                    <a href="#schedule" class="text-coralOrange uppercase font-bold tracking-widest hover:underline">See Schedule <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                <div class="pt-6 mt-6 border-t border-line flex justify-between items-center text-xs">
+                    <span class="text-muted"><i class="fa-regular fa-clock mr-1 text-gold"></i> 50 min</span>
+                    <a href="#schedule" class="text-gold font-semibold hover:underline">Schedule</a>
                 </div>
             </div>
 
-            <div class="bg-darkCard border border-darkBorder hover:border-coralOrange transition duration-300 p-8 flex flex-col justify-between group">
+            <div class="bg-ink hover:bg-panel transition duration-300 p-8 flex flex-col justify-between group">
                 <div>
-                    <div class="flex justify-between items-center mb-6">
-                        <div class="w-12 h-12 bg-coralOrange text-matteBlack font-extrabold flex items-center justify-center text-xl shadow-md">
-                            <i class="fa-solid fa-bicycle"></i>
-                        </div>
-                        <span class="text-[10px] uppercase tracking-widest bg-matteBlack px-3 py-1 text-coralOrange font-bold border border-coralOrange/30">Intensity: High</span>
+                    <div class="flex justify-between items-start mb-8">
+                        <i class="fa-solid fa-bicycle text-gold text-xl"></i>
+                        <span class="text-[10px] uppercase tracking-widest text-muted border border-line px-2.5 py-1">High</span>
                     </div>
-                    <h3 class="font-condensed text-3xl font-bold mb-3 group-hover:text-coralOrange transition">Power Spin</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6">Rhythm-driven, high-power indoor cycling sessions designed to build explosive leg stamina and cardiovascular endurance.</p>
+                    <h3 class="font-display text-2xl mb-3 text-ivory">Power Spin</h3>
+                    <p class="text-muted text-sm leading-relaxed">Rhythm-driven indoor cycling built for explosive leg stamina and engine capacity.</p>
                 </div>
-                <div class="pt-6 border-t border-darkBorder flex justify-between items-center text-xs">
-                    <span class="text-gray-400 uppercase tracking-widest font-semibold"><i class="fa-regular fa-clock mr-1 text-coralOrange"></i> 45 Mins</span>
-                    <a href="#schedule" class="text-coralOrange uppercase font-bold tracking-widest hover:underline">See Schedule <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                <div class="pt-6 mt-6 border-t border-line flex justify-between items-center text-xs">
+                    <span class="text-muted"><i class="fa-regular fa-clock mr-1 text-gold"></i> 45 min</span>
+                    <a href="#schedule" class="text-gold font-semibold hover:underline">Schedule</a>
                 </div>
             </div>
 
-            <div class="bg-darkCard border border-darkBorder hover:border-coralOrange transition duration-300 p-8 flex flex-col justify-between group">
+            <div class="bg-ink hover:bg-panel transition duration-300 p-8 flex flex-col justify-between group">
                 <div>
-                    <div class="flex justify-between items-center mb-6">
-                        <div class="w-12 h-12 bg-coralOrange text-matteBlack font-extrabold flex items-center justify-center text-xl shadow-md">
-                            <i class="fa-solid fa-heart-pulse"></i>
-                        </div>
-                        <span class="text-[10px] uppercase tracking-widest bg-matteBlack px-3 py-1 text-coralOrange font-bold border border-coralOrange/30">Intensity: Recovery</span>
+                    <div class="flex justify-between items-start mb-8">
+                        <i class="fa-solid fa-heart-pulse text-gold text-xl"></i>
+                        <span class="text-[10px] uppercase tracking-widest text-muted border border-line px-2.5 py-1">Recovery</span>
                     </div>
-                    <h3 class="font-condensed text-3xl font-bold mb-3 group-hover:text-coralOrange transition">Active Recovery</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6">Contrast therapy guidance, guided stretching, foam rolling, and central nervous system downregulation.</p>
+                    <h3 class="font-display text-2xl mb-3 text-ivory">Active Recovery</h3>
+                    <p class="text-muted text-sm leading-relaxed">Guided stretching, foam rolling and nervous-system downregulation after a hard week.</p>
                 </div>
-                <div class="pt-6 border-t border-darkBorder flex justify-between items-center text-xs">
-                    <span class="text-gray-400 uppercase tracking-widest font-semibold"><i class="fa-regular fa-clock mr-1 text-coralOrange"></i> 45 Mins</span>
-                    <a href="#schedule" class="text-coralOrange uppercase font-bold tracking-widest hover:underline">See Schedule <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                <div class="pt-6 mt-6 border-t border-line flex justify-between items-center text-xs">
+                    <span class="text-muted"><i class="fa-regular fa-clock mr-1 text-gold"></i> 45 min</span>
+                    <a href="#schedule" class="text-gold font-semibold hover:underline">Schedule</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="schedule" class="py-24 bg-darkCard border-t border-b border-darkBorder">
+    <section id="schedule" class="py-24 bg-panel border-t border-b border-line">
         <div class="max-w-7xl mx-auto px-4 sm:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="uppercase tracking-[0.3em] text-xs text-coralOrange font-bold">Timetable</span>
-                <h2 class="font-condensed text-5xl sm:text-6xl font-extrabold mt-2 mb-4 uppercase">Weekly Studio Schedule</h2>
-                <div class="w-16 h-1 bg-coralOrange mx-auto"></div>
+            <div class="max-w-2xl mb-16">
+                <span class="text-xs uppercase tracking-[0.25em] text-gold font-semibold">Timetable</span>
+                <h2 class="font-display text-4xl sm:text-5xl font-medium mt-3 text-ivory">This week at the studio</h2>
             </div>
 
-            <div class="overflow-x-auto shadow-2xl">
+            <div class="overflow-x-auto">
                 <table class="w-full text-left border-collapse min-w-[700px]">
                     <thead>
-                        <tr class="border-b border-darkBorder bg-matteBlack">
-                            <th class="p-4 font-condensed text-xl tracking-wider text-coralOrange">Time</th>
-                            <th class="p-4 font-condensed text-xl tracking-wider">Monday</th>
-                            <th class="p-4 font-condensed text-xl tracking-wider">Tuesday</th>
-                            <th class="p-4 font-condensed text-xl tracking-wider">Wednesday</th>
-                            <th class="p-4 font-condensed text-xl tracking-wider">Thursday</th>
-                            <th class="p-4 font-condensed text-xl tracking-wider">Friday</th>
+                        <tr class="border-b border-gold/40">
+                            <th class="p-4 font-display text-lg text-gold font-medium">Time</th>
+                            <th class="p-4 font-display text-lg text-ivory font-medium">Monday</th>
+                            <th class="p-4 font-display text-lg text-ivory font-medium">Tuesday</th>
+                            <th class="p-4 font-display text-lg text-ivory font-medium">Wednesday</th>
+                            <th class="p-4 font-display text-lg text-ivory font-medium">Thursday</th>
+                            <th class="p-4 font-display text-lg text-ivory font-medium">Friday</th>
                         </tr>
                     </thead>
-                    <tbody class="text-sm divide-y divide-darkBorder">
-                        <tr class="hover:bg-matteBlack/50 transition">
-                            <td class="p-4 font-bold text-coralOrange">07:00 AM</td>
-                            <td class="p-4 group cursor-pointer"><span class="block bg-matteBlack p-2.5 border border-darkBorder group-hover:border-coralOrange group-hover:text-coralOrange font-semibold transition">Strength & Power</span></td>
-                            <td class="p-4 group cursor-pointer"><span class="block bg-matteBlack p-2.5 border border-darkBorder group-hover:border-coralOrange group-hover:text-coralOrange font-semibold transition">Metabolic HIIT</span></td>
-                            <td class="p-4 group cursor-pointer"><span class="block bg-matteBlack p-2.5 border border-darkBorder group-hover:border-coralOrange group-hover:text-coralOrange font-semibold transition">Strength & Power</span></td>
-                            <td class="p-4 group cursor-pointer"><span class="block bg-matteBlack p-2.5 border border-darkBorder group-hover:border-coralOrange group-hover:text-coralOrange font-semibold transition">Metabolic HIIT</span></td>
-                            <td class="p-4 group cursor-pointer"><span class="block bg-matteBlack p-2.5 border border-darkBorder group-hover:border-coralOrange group-hover:text-coralOrange font-semibold transition">Power Spin</span></td>
+                    <tbody class="text-sm divide-y divide-line">
+                        <tr class="hover:bg-ink/40 transition">
+                            <td class="p-4 font-semibold text-gold">6:30 AM</td>
+                            <td class="p-4 text-muted">Strength & Power</td>
+                            <td class="p-4 text-muted">Metabolic Conditioning</td>
+                            <td class="p-4 text-muted">Strength & Power</td>
+                            <td class="p-4 text-muted">Metabolic Conditioning</td>
+                            <td class="p-4 text-muted">Power Spin</td>
                         </tr>
-                        <tr class="hover:bg-matteBlack/50 transition">
-                            <td class="p-4 font-bold text-coralOrange">12:30 PM</td>
-                            <td class="p-4 group cursor-pointer"><span class="block bg-matteBlack p-2.5 border border-darkBorder group-hover:border-coralOrange group-hover:text-coralOrange font-semibold transition">Mobility & Flow</span></td>
-                            <td class="p-4 group cursor-pointer"><span class="block bg-matteBlack p-2.5 border border-darkBorder group-hover:border-coralOrange group-hover:text-coralOrange font-semibold transition">Power Spin</span></td>
-                            <td class="p-4 group cursor-pointer"><span class="block bg-matteBlack p-2.5 border border-darkBorder group-hover:border-coralOrange group-hover:text-coralOrange font-semibold transition">Mobility & Flow</span></td>
-                            <td class="p-4 group cursor-pointer"><span class="block bg-matteBlack p-2.5 border border-darkBorder group-hover:border-coralOrange group-hover:text-coralOrange font-semibold transition">Technical Boxing</span></td>
-                            <td class="p-4 group cursor-pointer"><span class="block bg-matteBlack p-2.5 border border-darkBorder group-hover:border-coralOrange group-hover:text-coralOrange font-semibold transition">Active Recovery</span></td>
+                        <tr class="hover:bg-ink/40 transition">
+                            <td class="p-4 font-semibold text-gold">12:00 PM</td>
+                            <td class="p-4 text-muted">Mobility & Flow</td>
+                            <td class="p-4 text-muted">Power Spin</td>
+                            <td class="p-4 text-muted">Mobility & Flow</td>
+                            <td class="p-4 text-muted">Technical Boxing</td>
+                            <td class="p-4 text-muted">Active Recovery</td>
                         </tr>
-                        <tr class="hover:bg-matteBlack/50 transition">
-                            <td class="p-4 font-bold text-coralOrange">05:30 PM</td>
-                            <td class="p-4 group cursor-pointer"><span class="block bg-matteBlack p-2.5 border border-darkBorder group-hover:border-coralOrange group-hover:text-coralOrange font-semibold transition">Technical Boxing</span></td>
-                            <td class="p-4 group cursor-pointer"><span class="block bg-matteBlack p-2.5 border border-darkBorder group-hover:border-coralOrange group-hover:text-coralOrange font-semibold transition">Strength & Power</span></td>
-                            <td class="p-4 group cursor-pointer"><span class="block bg-matteBlack p-2.5 border border-darkBorder group-hover:border-coralOrange group-hover:text-coralOrange font-semibold transition">Technical Boxing</span></td>
-                            <td class="p-4 group cursor-pointer"><span class="block bg-matteBlack p-2.5 border border-darkBorder group-hover:border-coralOrange group-hover:text-coralOrange font-semibold transition">Strength & Power</span></td>
-                            <td class="p-4 group cursor-pointer"><span class="block bg-matteBlack p-2.5 border border-darkBorder group-hover:border-coralOrange group-hover:text-coralOrange font-semibold transition">Metabolic HIIT</span></td>
+                        <tr class="hover:bg-ink/40 transition">
+                            <td class="p-4 font-semibold text-gold">6:30 PM</td>
+                            <td class="p-4 text-muted">Technical Boxing</td>
+                            <td class="p-4 text-muted">Strength & Power</td>
+                            <td class="p-4 text-muted">Technical Boxing</td>
+                            <td class="p-4 text-muted">Strength & Power</td>
+                            <td class="p-4 text-muted">Metabolic Conditioning</td>
                         </tr>
-                        <tr class="hover:bg-matteBlack/50 transition">
-                            <td class="p-4 font-bold text-coralOrange">07:00 PM</td>
-                            <td class="p-4 group cursor-pointer"><span class="block bg-matteBlack p-2.5 border border-darkBorder group-hover:border-coralOrange group-hover:text-coralOrange font-semibold transition">Metabolic HIIT</span></td>
-                            <td class="p-4 group cursor-pointer"><span class="block bg-matteBlack p-2.5 border border-darkBorder group-hover:border-coralOrange group-hover:text-coralOrange font-semibold transition">Power Spin</span></td>
-                            <td class="p-4 group cursor-pointer"><span class="block bg-matteBlack p-2.5 border border-darkBorder group-hover:border-coralOrange group-hover:text-coralOrange font-semibold transition">Metabolic HIIT</span></td>
-                            <td class="p-4 group cursor-pointer"><span class="block bg-matteBlack p-2.5 border border-darkBorder group-hover:border-coralOrange group-hover:text-coralOrange font-semibold transition">Active Recovery</span></td>
-                            <td class="p-4 group cursor-pointer"><span class="block bg-matteBlack p-2.5 border border-darkBorder group-hover:border-coralOrange group-hover:text-coralOrange font-semibold transition">Mobility & Flow</span></td>
+                        <tr class="hover:bg-ink/40 transition">
+                            <td class="p-4 font-semibold text-gold">8:00 PM</td>
+                            <td class="p-4 text-muted">Metabolic Conditioning</td>
+                            <td class="p-4 text-muted">Power Spin</td>
+                            <td class="p-4 text-muted">Metabolic Conditioning</td>
+                            <td class="p-4 text-muted">Active Recovery</td>
+                            <td class="p-4 text-muted">Mobility & Flow</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <div class="text-center mt-8">
-                <a href="#trial" class="inline-block px-8 py-3.5 bg-coralOrange text-matteBlack font-extrabold uppercase text-xs tracking-widest hover:bg-coralHover hover:text-white transition shadow-lg shadow-coralOrange/20">Book Your Spot Now</a>
+            <div class="mt-10">
+                <a href="#trial" class="inline-block px-8 py-3.5 bg-gold text-ink font-semibold uppercase text-xs tracking-widest hover:bg-goldBright transition">Book Your Spot</a>
             </div>
         </div>
     </section>
 
     <section class="py-24 max-w-7xl mx-auto px-4 sm:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-16">
-            <span class="uppercase tracking-[0.3em] text-xs text-coralOrange font-bold">The Difference</span>
-            <h2 class="font-condensed text-5xl sm:text-6xl font-extrabold mt-2 mb-4 uppercase">Why Train With Ironbloom</h2>
-            <div class="w-16 h-1 bg-coralOrange mx-auto"></div>
+        <div class="max-w-2xl mb-16">
+            <span class="text-xs uppercase tracking-[0.25em] text-gold font-semibold">The Difference</span>
+            <h2 class="font-display text-4xl sm:text-5xl font-medium mt-3 text-ivory">Why train at Akhara</h2>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-darkCard p-8 border border-darkBorder hover:border-coralOrange transition duration-300">
-                <div class="w-14 h-14 bg-matteBlack text-coralOrange flex items-center justify-center text-2xl mb-6 border border-darkBorder">
-                    <i class="fa-solid fa-user-tie"></i>
-                </div>
-                <h3 class="font-condensed text-2xl font-bold mb-3 uppercase">Expert Coaches</h3>
-                <p class="text-gray-400 text-sm leading-relaxed">World-class accredited strength coaches with backgrounds in elite sports science and competitive powerlifting.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div>
+                <i class="fa-solid fa-user-tie text-gold text-2xl mb-5 block"></i>
+                <h3 class="font-display text-xl mb-2 text-ivory">Expert Coaches</h3>
+                <p class="text-muted text-sm leading-relaxed">Accredited strength coaches with backgrounds in competitive powerlifting and sports science.</p>
             </div>
-
-            <div class="bg-darkCard p-8 border border-darkBorder hover:border-coralOrange transition duration-300">
-                <div class="w-14 h-14 bg-matteBlack text-coralOrange flex items-center justify-center text-2xl mb-6 border border-darkBorder">
-                    <i class="fa-solid fa-users"></i>
-                </div>
-                <h3 class="font-condensed text-2xl font-bold mb-3 uppercase">Small Group Sizes</h3>
-                <p class="text-gray-400 text-sm leading-relaxed">Capped at 14 members per class to ensure personalized feedback, perfect form, and zero overcrowding.</p>
+            <div>
+                <i class="fa-solid fa-users text-gold text-2xl mb-5 block"></i>
+                <h3 class="font-display text-xl mb-2 text-ivory">Small Class Sizes</h3>
+                <p class="text-muted text-sm leading-relaxed">Capped at 14 members per session for real coaching feedback and correct form.</p>
             </div>
-
-            <div class="bg-darkCard p-8 border border-darkBorder hover:border-coralOrange transition duration-300">
-                <div class="w-14 h-14 bg-matteBlack text-coralOrange flex items-center justify-center text-2xl mb-6 border border-darkBorder">
-                    <i class="fa-solid fa-chart-line"></i>
-                </div>
-                <h3 class="font-condensed text-2xl font-bold mb-3 uppercase">Progress Tracking</h3>
-                <p class="text-gray-400 text-sm leading-relaxed">Quarterly body composition scans, strength benchmark testing, and customized app tracking for guaranteed progress.</p>
+            <div>
+                <i class="fa-solid fa-chart-line text-gold text-2xl mb-5 block"></i>
+                <h3 class="font-display text-xl mb-2 text-ivory">Progress Tracking</h3>
+                <p class="text-muted text-sm leading-relaxed">Quarterly body composition scans and strength benchmarks logged in your member app.</p>
             </div>
-
-            <div class="bg-darkCard p-8 border border-darkBorder hover:border-coralOrange transition duration-300">
-                <div class="w-14 h-14 bg-matteBlack text-coralOrange flex items-center justify-center text-2xl mb-6 border border-darkBorder">
-                    <i class="fa-solid fa-hot-tub-person"></i>
-                </div>
-                <h3 class="font-condensed text-2xl font-bold mb-3 uppercase">Recovery Zone</h3>
-                <p class="text-gray-400 text-sm leading-relaxed">Dedicated post-workout recovery area featuring infrared saunas, ice baths, and percussion therapy tools.</p>
+            <div>
+                <i class="fa-solid fa-hot-tub-person text-gold text-2xl mb-5 block"></i>
+                <h3 class="font-display text-xl mb-2 text-ivory">Recovery Zone</h3>
+                <p class="text-muted text-sm leading-relaxed">Infrared sauna, ice baths and percussion therapy tools for after the work is done.</p>
             </div>
-
-            <div class="bg-darkCard p-8 border border-darkBorder hover:border-coralOrange transition duration-300">
-                <div class="w-14 h-14 bg-matteBlack text-coralOrange flex items-center justify-center text-2xl mb-6 border border-darkBorder">
-                    <i class="fa-solid fa-champagne-glasses"></i>
-                </div>
-                <h3 class="font-condensed text-2xl font-bold mb-3 uppercase">Community Events</h3>
-                <p class="text-gray-400 text-sm leading-relaxed">Monthly member socials, internal lifting competitions, nutritional workshops, and outdoor adventure challenges.</p>
+            <div>
+                <i class="fa-solid fa-champagne-glasses text-gold text-2xl mb-5 block"></i>
+                <h3 class="font-display text-xl mb-2 text-ivory">Community Events</h3>
+                <p class="text-muted text-sm leading-relaxed">Monthly member socials, internal lifting meets, and nutrition workshops.</p>
             </div>
-
-            <div class="bg-darkCard p-8 border border-darkBorder hover:border-coralOrange transition duration-300">
-                <div class="w-14 h-14 bg-matteBlack text-coralOrange flex items-center justify-center text-2xl mb-6 border border-darkBorder">
-                    <i class="fa-solid fa-apple-whole"></i>
-                </div>
-                <h3 class="font-condensed text-2xl font-bold mb-3 uppercase">Nutrition Support</h3>
-                <p class="text-gray-400 text-sm leading-relaxed">In-house sports nutrition guidance and macro planning designed to fuel your training and accelerate recovery.</p>
+            <div>
+                <i class="fa-solid fa-apple-whole text-gold text-2xl mb-5 block"></i>
+                <h3 class="font-display text-xl mb-2 text-ivory">Nutrition Support</h3>
+                <p class="text-muted text-sm leading-relaxed">In-house guidance and macro planning to fuel training and speed recovery.</p>
             </div>
         </div>
     </section>
 
-    <section id="trainers" class="py-24 bg-darkCard border-t border-b border-darkBorder">
+    <section id="trainers" class="py-24 bg-panel border-t border-b border-line">
         <div class="max-w-7xl mx-auto px-4 sm:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="uppercase tracking-[0.3em] text-xs text-coralOrange font-bold">The Masters</span>
-                <h2 class="font-condensed text-5xl sm:text-6xl font-extrabold mt-2 mb-4 uppercase">Meet Our Elite Coaches</h2>
-                <div class="w-16 h-1 bg-coralOrange mx-auto"></div>
+            <div class="max-w-2xl mb-16">
+                <span class="text-xs uppercase tracking-[0.25em] text-gold font-semibold">The Coaches</span>
+                <h2 class="font-display text-4xl sm:text-5xl font-medium mt-3 text-ivory">The people behind the plates</h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-matteBlack border border-darkBorder group">
+                <div class="bg-ink border border-line group">
                     <div class="overflow-hidden aspect-[4/5]">
-                        <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=800&q=80" alt="Marcus Stone" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=800&q=80" alt="Bilal Sheikh" class="w-full h-full object-cover gold-photo group-hover:scale-105 transition duration-700">
                     </div>
-                    <div class="p-6 text-center">
-                        <span class="text-[10px] uppercase tracking-widest bg-darkCard px-3 py-1 text-coralOrange font-bold border border-coralOrange/30">Head Strength Coach</span>
-                        <h3 class="font-condensed text-3xl font-bold mt-3 mb-1 uppercase">Marcus Stone</h3>
-                        <p class="text-xs text-gray-400 mb-4 font-mono">BSc Sports Science, CSCS, Former GB Powerlifter</p>
-                        <p class="text-gray-400 text-xs mb-6 leading-relaxed">Specializing in compound mechanics, functional hypertrophy, and breaking through lifetime strength plateaus.</p>
-                        <div class="flex justify-center space-x-4 text-offWhite">
-                            <a href="#" class="w-9 h-9 bg-darkCard border border-darkBorder flex items-center justify-center hover:bg-coralOrange hover:text-matteBlack transition"><i class="fa-brands fa-instagram text-xs"></i></a>
-                            <a href="#" class="w-9 h-9 bg-darkCard border border-darkBorder flex items-center justify-center hover:bg-coralOrange hover:text-matteBlack transition"><i class="fa-brands fa-x-twitter text-xs"></i></a>
-                            <a href="#" class="w-9 h-9 bg-darkCard border border-darkBorder flex items-center justify-center hover:bg-coralOrange hover:text-matteBlack transition"><i class="fa-brands fa-linkedin-in text-xs"></i></a>
-                        </div>
+                    <div class="p-6">
+                        <span class="text-[10px] uppercase tracking-widest text-gold font-semibold">Head Strength Coach</span>
+                        <h3 class="font-display text-2xl mt-2 mb-1 text-ivory">Bilal Sheikh</h3>
+                        <p class="text-xs text-muted mb-4">BSc Sports Science, CSCS, Former National Powerlifter</p>
+                        <p class="text-muted text-xs leading-relaxed">Focused on compound mechanics and breaking lifetime strength plateaus.</p>
                     </div>
                 </div>
 
-                <div class="bg-matteBlack border border-darkBorder group">
+                <div class="bg-ink border border-line group">
                     <div class="overflow-hidden aspect-[4/5]">
-                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80" alt="Elena Rostova" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80" alt="Ayesha Malik" class="w-full h-full object-cover gold-photo group-hover:scale-105 transition duration-700">
                     </div>
-                    <div class="p-6 text-center">
-                        <span class="text-[10px] uppercase tracking-widest bg-darkCard px-3 py-1 text-coralOrange font-bold border border-coralOrange/30">Metabolic & HIIT Lead</span>
-                        <h3 class="font-condensed text-3xl font-bold mt-3 mb-1 uppercase">Elena Rostova</h3>
-                        <p class="text-xs text-gray-400 mb-4 font-mono">CrossFit Regional Athlete, NASM-CPT</p>
-                        <p class="text-gray-400 text-xs mb-6 leading-relaxed">Expert in high-intensity conditioning, engine building, and pushing athletes past perceived mental barriers.</p>
-                        <div class="flex justify-center space-x-4 text-offWhite">
-                            <a href="#" class="w-9 h-9 bg-darkCard border border-darkBorder flex items-center justify-center hover:bg-coralOrange hover:text-matteBlack transition"><i class="fa-brands fa-instagram text-xs"></i></a>
-                            <a href="#" class="w-9 h-9 bg-darkCard border border-darkBorder flex items-center justify-center hover:bg-coralOrange hover:text-matteBlack transition"><i class="fa-brands fa-x-twitter text-xs"></i></a>
-                            <a href="#" class="w-9 h-9 bg-darkCard border border-darkBorder flex items-center justify-center hover:bg-coralOrange hover:text-matteBlack transition"><i class="fa-brands fa-linkedin-in text-xs"></i></a>
-                        </div>
+                    <div class="p-6">
+                        <span class="text-[10px] uppercase tracking-widest text-gold font-semibold">Conditioning Lead</span>
+                        <h3 class="font-display text-2xl mt-2 mb-1 text-ivory">Ayesha Malik</h3>
+                        <p class="text-xs text-muted mb-4">NASM-CPT, Regional CrossFit Athlete</p>
+                        <p class="text-muted text-xs leading-relaxed">Builds engines and pushes members past their perceived limits, safely.</p>
                     </div>
                 </div>
 
-                <div class="bg-matteBlack border border-darkBorder group">
+                <div class="bg-ink border border-line group">
                     <div class="overflow-hidden aspect-[4/5]">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="Chloe Davies" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="Omar Farooq" class="w-full h-full object-cover gold-photo group-hover:scale-105 transition duration-700">
                     </div>
-                    <div class="p-6 text-center">
-                        <span class="text-[10px] uppercase tracking-widest bg-darkCard px-3 py-1 text-coralOrange font-bold border border-coralOrange/30">Mobility & Recovery Specialist</span>
-                        <h3 class="font-condensed text-3xl font-bold mt-3 mb-1 uppercase">Chloe Davies</h3>
-                        <p class="text-xs text-gray-400 mb-4 font-mono">DPT, Yoga Master, Functional Movement Specialist</p>
-                        <p class="text-gray-400 text-xs mb-6 leading-relaxed">Dedicated to restoring structural alignment, injury rehabilitation, and unlocking joint longevity.</p>
-                        <div class="flex justify-center space-x-4 text-offWhite">
-                            <a href="#" class="w-9 h-9 bg-darkCard border border-darkBorder flex items-center justify-center hover:bg-coralOrange hover:text-matteBlack transition"><i class="fa-brands fa-instagram text-xs"></i></a>
-                            <a href="#" class="w-9 h-9 bg-darkCard border border-darkBorder flex items-center justify-center hover:bg-coralOrange hover:text-matteBlack transition"><i class="fa-brands fa-x-twitter text-xs"></i></a>
-                            <a href="#" class="w-9 h-9 bg-darkCard border border-darkBorder flex items-center justify-center hover:bg-coralOrange hover:text-matteBlack transition"><i class="fa-brands fa-linkedin-in text-xs"></i></a>
-                        </div>
+                    <div class="p-6">
+                        <span class="text-[10px] uppercase tracking-widest text-gold font-semibold">Mobility & Recovery</span>
+                        <h3 class="font-display text-2xl mt-2 mb-1 text-ivory">Omar Farooq</h3>
+                        <p class="text-xs text-muted mb-4">DPT, Functional Movement Specialist</p>
+                        <p class="text-muted text-xs leading-relaxed">Restores structural alignment and keeps joints ready for heavy training.</p>
                     </div>
                 </div>
             </div>
@@ -471,122 +409,112 @@
     </section>
 
     <section id="membership" class="py-24 max-w-7xl mx-auto px-4 sm:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-16">
-            <span class="uppercase tracking-[0.3em] text-xs text-coralOrange font-bold">Invest In Yourself</span>
-            <h2 class="font-condensed text-5xl sm:text-6xl font-extrabold mt-2 mb-4 uppercase">Membership Options</h2>
-            <div class="w-16 h-1 bg-coralOrange mx-auto"></div>
+        <div class="max-w-2xl mb-16">
+            <span class="text-xs uppercase tracking-[0.25em] text-gold font-semibold">Invest In Yourself</span>
+            <h2 class="font-display text-4xl sm:text-5xl font-medium mt-3 text-ivory">Membership</h2>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
-            <div class="bg-darkCard p-8 border border-darkBorder flex flex-col justify-between">
+            <div class="p-8 border border-line flex flex-col justify-between">
                 <div>
-                    <span class="text-xs uppercase tracking-widest text-gray-400 font-bold block mb-2">Casual Training</span>
-                    <h3 class="font-condensed text-4xl font-bold mb-4 uppercase">Drop-In Pass</h3>
-                    <p class="font-condensed text-5xl font-extrabold text-coralOrange mb-6">£25 <span class="text-sm font-sans text-gray-400 font-normal">/ session</span></p>
-                    <p class="text-gray-400 text-xs mb-6">Ideal for visitors, travelers, or flexible schedules.</p>
-                    <ul class="space-y-3 text-sm text-gray-300 mb-8 border-t border-darkBorder pt-6">
-                        <li><i class="fa-solid fa-check text-coralOrange mr-2"></i> Access to any single class</li>
-                        <li><i class="fa-solid fa-check text-coralOrange mr-2"></i> Full locker room & towel service</li>
-                        <li><i class="fa-solid fa-check text-coralOrange mr-2"></i> Recovery zone post-workout</li>
+                    <span class="text-xs uppercase tracking-widest text-muted font-semibold block mb-2">Casual Training</span>
+                    <h3 class="font-display text-2xl mb-4 text-ivory">Drop-In Pass</h3>
+                    <p class="font-display text-4xl text-gold mb-6">Rs. 3,500 <span class="text-sm font-sans text-muted font-normal">/ session</span></p>
+                    <p class="text-muted text-xs mb-6">For travelers, guests, or a flexible week.</p>
+                    <ul class="space-y-3 text-sm text-ivory/90 mb-8 border-t border-line pt-6">
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Access to any single class</li>
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Locker room & towel service</li>
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Recovery zone post-workout</li>
                     </ul>
                 </div>
-                <a href="#trial" class="block text-center py-3.5 bg-matteBlack border border-coralOrange text-offWhite font-bold uppercase text-xs tracking-widest hover:bg-coralOrange hover:text-matteBlack transition">Book Drop-In</a>
+                <a href="#trial" class="block text-center py-3.5 border border-gold text-gold font-semibold uppercase text-xs tracking-widest hover:bg-gold hover:text-ink transition">Book Drop-In</a>
             </div>
 
-            <div class="bg-darkCard p-8 border-2 border-coralOrange flex flex-col justify-between relative shadow-2xl glow-effect">
-                <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-coralOrange text-matteBlack font-extrabold uppercase text-[10px] tracking-widest px-4 py-1">Most Popular</span>
+            <div class="p-8 border-2 border-gold flex flex-col justify-between relative bg-panel">
+                <span class="absolute -top-3 left-8 bg-gold text-ink font-semibold uppercase text-[10px] tracking-widest px-4 py-1">Most Popular</span>
                 <div>
-                    <span class="text-xs uppercase tracking-widest text-coralOrange font-bold block mb-2">Unlimited Access</span>
-                    <h3 class="font-condensed text-4xl font-bold mb-4 uppercase">Unlimited Monthly</h3>
-                    <p class="font-condensed text-5xl font-extrabold text-coralOrange mb-6">£185 <span class="text-sm font-sans text-gray-400 font-normal">/ month</span></p>
-                    <p class="text-gray-400 text-xs mb-6">For committed athletes looking for consistent transformation.</p>
-                    <ul class="space-y-3 text-sm text-gray-300 mb-8 border-t border-darkBorder pt-6">
-                        <li><i class="fa-solid fa-check text-coralOrange mr-2"></i> Unlimited group training classes</li>
-                        <li><i class="fa-solid fa-check text-coralOrange mr-2"></i> Priority booking (14 days advance)</li>
-                        <li><i class="fa-solid fa-check text-coralOrange mr-2"></i> Quarterly InBody scans</li>
-                        <li><i class="fa-solid fa-check text-coralOrange mr-2"></i> Full recovery zone access</li>
-                        <li><i class="fa-solid fa-check text-coralOrange mr-2"></i> Guest pass (2 per month)</li>
+                    <span class="text-xs uppercase tracking-widest text-gold font-semibold block mb-2">Unlimited Access</span>
+                    <h3 class="font-display text-2xl mb-4 text-ivory">Unlimited Monthly</h3>
+                    <p class="font-display text-4xl text-gold mb-6">Rs. 28,000 <span class="text-sm font-sans text-muted font-normal">/ month</span></p>
+                    <p class="text-muted text-xs mb-6">For members training consistently, four or more times a week.</p>
+                    <ul class="space-y-3 text-sm text-ivory/90 mb-8 border-t border-line pt-6">
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Unlimited group training classes</li>
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Priority booking, 14 days in advance</li>
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Quarterly body composition scans</li>
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Full recovery zone access</li>
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Two guest passes a month</li>
                     </ul>
                 </div>
-                <a href="#trial" class="block text-center py-3.5 bg-coralOrange text-matteBlack font-extrabold uppercase text-xs tracking-widest hover:bg-coralHover hover:text-white transition shadow-lg shadow-coralOrange/30">Join Now</a>
+                <a href="#trial" class="block text-center py-3.5 bg-gold text-ink font-semibold uppercase text-xs tracking-widest hover:bg-goldBright transition">Join Now</a>
             </div>
 
-            <div class="bg-darkCard p-8 border border-darkBorder flex flex-col justify-between">
+            <div class="p-8 border border-line flex flex-col justify-between">
                 <div>
-                    <span class="text-xs uppercase tracking-widest text-gray-400 font-bold block mb-2">Annual Commitment</span>
-                    <h3 class="font-condensed text-4xl font-bold mb-4 uppercase">Annual Elite</h3>
-                    <p class="font-condensed text-5xl font-extrabold text-coralOrange mb-6">£1,650 <span class="text-sm font-sans text-gray-400 font-normal">/ year</span></p>
-                    <p class="text-gray-400 text-xs mb-6">Best value for dedicated long-term physical development.</p>
-                    <ul class="space-y-3 text-sm text-gray-300 mb-8 border-t border-darkBorder pt-6">
-                        <li><i class="fa-solid fa-check text-coralOrange mr-2"></i> All Unlimited Monthly perks</li>
-                        <li><i class="fa-solid fa-check text-coralOrange mr-2"></i> 2 free 1-on-1 PT sessions</li>
-                        <li><i class="fa-solid fa-check text-coralOrange mr-2"></i> Free Ironbloom merchandise pack</li>
-                        <li><i class="fa-solid fa-check text-coralOrange mr-2"></i> VIP workshop & seminar access</li>
+                    <span class="text-xs uppercase tracking-widest text-muted font-semibold block mb-2">Annual Commitment</span>
+                    <h3 class="font-display text-2xl mb-4 text-ivory">Annual Elite</h3>
+                    <p class="font-display text-4xl text-gold mb-6">Rs. 260,000 <span class="text-sm font-sans text-muted font-normal">/ year</span></p>
+                    <p class="text-muted text-xs mb-6">Best value for dedicated, long-term training.</p>
+                    <ul class="space-y-3 text-sm text-ivory/90 mb-8 border-t border-line pt-6">
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> All Unlimited Monthly benefits</li>
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Two free 1-on-1 coaching sessions</li>
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Akhara merchandise pack</li>
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Priority seminar & workshop access</li>
                     </ul>
                 </div>
-                <a href="#trial" class="block text-center py-3.5 bg-matteBlack border border-coralOrange text-offWhite font-bold uppercase text-xs tracking-widest hover:bg-coralOrange hover:text-matteBlack transition">Select Annual</a>
+                <a href="#trial" class="block text-center py-3.5 border border-gold text-gold font-semibold uppercase text-xs tracking-widest hover:bg-gold hover:text-ink transition">Select Annual</a>
             </div>
         </div>
     </section>
 
-    <section id="results" class="py-24 bg-darkCard border-t border-b border-darkBorder">
+    <section id="results" class="py-24 bg-panel border-t border-b border-line">
         <div class="max-w-7xl mx-auto px-4 sm:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="uppercase tracking-[0.3em] text-xs text-coralOrange font-bold">Real Proof</span>
-                <h2 class="font-condensed text-5xl sm:text-6xl font-extrabold mt-2 mb-4 uppercase">Member Transformations</h2>
-                <div class="w-16 h-1 bg-coralOrange mx-auto"></div>
+            <div class="max-w-2xl mb-16">
+                <span class="text-xs uppercase tracking-[0.25em] text-gold font-semibold">Real Proof</span>
+                <h2 class="font-display text-4xl sm:text-5xl font-medium mt-3 text-ivory">Member results</h2>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-matteBlack border border-darkBorder group overflow-hidden">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="border border-line group overflow-hidden">
                     <div class="aspect-[4/5] relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=600&q=80" alt="Transformation 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
-                        <div class="absolute bottom-3 left-3 bg-coralOrange text-matteBlack font-extrabold text-xs px-3 py-1 uppercase tracking-wider">
-                            -12kg in 16 Weeks
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=600&q=80" alt="Member transformation" class="w-full h-full object-cover gold-photo group-hover:scale-105 transition duration-700">
+                        <div class="absolute bottom-3 left-3 bg-gold text-ink font-semibold text-xs px-3 py-1">-12kg in 16 Weeks</div>
                     </div>
-                    <div class="p-4 text-center">
-                        <h4 class="font-condensed text-2xl font-bold uppercase">David Miller</h4>
-                        <p class="text-xs text-gray-400 font-mono">Member since 2024</p>
+                    <div class="p-4">
+                        <h4 class="font-display text-xl text-ivory">Danish Malik</h4>
+                        <p class="text-xs text-muted">Member since 2024</p>
                     </div>
                 </div>
 
-                <div class="bg-matteBlack border border-darkBorder group overflow-hidden">
+                <div class="border border-line group overflow-hidden">
                     <div class="aspect-[4/5] relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80" alt="Transformation 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
-                        <div class="absolute bottom-3 left-3 bg-coralOrange text-matteBlack font-extrabold text-xs px-3 py-1 uppercase tracking-wider">
-                            +15kg Deadlift PR
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80" alt="Member transformation" class="w-full h-full object-cover gold-photo group-hover:scale-105 transition duration-700">
+                        <div class="absolute bottom-3 left-3 bg-gold text-ink font-semibold text-xs px-3 py-1">+15kg Deadlift PR</div>
                     </div>
-                    <div class="p-4 text-center">
-                        <h4 class="font-condensed text-2xl font-bold uppercase">Sarah Jenkins</h4>
-                        <p class="text-xs text-gray-400 font-mono">Member since 2023</p>
+                    <div class="p-4">
+                        <h4 class="font-display text-xl text-ivory">Sara Jamil</h4>
+                        <p class="text-xs text-muted">Member since 2023</p>
                     </div>
                 </div>
 
-                <div class="bg-matteBlack border border-darkBorder group overflow-hidden">
+                <div class="border border-line group overflow-hidden">
                     <div class="aspect-[4/5] relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=600&q=80" alt="Transformation 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
-                        <div class="absolute bottom-3 left-3 bg-coralOrange text-matteBlack font-extrabold text-xs px-3 py-1 uppercase tracking-wider">
-                            -14% Body Fat
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=600&q=80" alt="Member transformation" class="w-full h-full object-cover gold-photo group-hover:scale-105 transition duration-700">
+                        <div class="absolute bottom-3 left-3 bg-gold text-ink font-semibold text-xs px-3 py-1">-14% Body Fat</div>
                     </div>
-                    <div class="p-4 text-center">
-                        <h4 class="font-condensed text-2xl font-bold uppercase">Liam O'Connor</h4>
-                        <p class="text-xs text-gray-400 font-mono">Member since 2025</p>
+                    <div class="p-4">
+                        <h4 class="font-display text-xl text-ivory">Hamza Qureshi</h4>
+                        <p class="text-xs text-muted">Member since 2025</p>
                     </div>
                 </div>
 
-                <div class="bg-matteBlack border border-darkBorder group overflow-hidden">
+                <div class="border border-line group overflow-hidden">
                     <div class="aspect-[4/5] relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=600&q=80" alt="Transformation 4" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
-                        <div class="absolute bottom-3 left-3 bg-coralOrange text-matteBlack font-extrabold text-xs px-3 py-1 uppercase tracking-wider">
-                            Complete Recomp
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=600&q=80" alt="Member transformation" class="w-full h-full object-cover gold-photo group-hover:scale-105 transition duration-700">
+                        <div class="absolute bottom-3 left-3 bg-gold text-ink font-semibold text-xs px-3 py-1">Full Recomposition</div>
                     </div>
-                    <div class="p-4 text-center">
-                        <h4 class="font-condensed text-2xl font-bold uppercase">Amara Thorne</h4>
-                        <p class="text-xs text-gray-400 font-mono">Member since 2024</p>
+                    <div class="p-4">
+                        <h4 class="font-display text-xl text-ivory">Amna Sheikh</h4>
+                        <p class="text-xs text-muted">Member since 2024</p>
                     </div>
                 </div>
             </div>
@@ -594,104 +522,97 @@
     </section>
 
     <section class="py-24 max-w-7xl mx-auto px-4 sm:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-16">
-            <span class="uppercase tracking-[0.3em] text-xs text-coralOrange font-bold">Our Facility</span>
-            <h2 class="font-condensed text-5xl sm:text-6xl font-extrabold mt-2 mb-4 uppercase">The Ironbloom Space</h2>
-            <div class="w-16 h-1 bg-coralOrange mx-auto"></div>
+        <div class="max-w-2xl mb-16">
+            <span class="text-xs uppercase tracking-[0.25em] text-gold font-semibold">Our Facility</span>
+            <h2 class="font-display text-4xl sm:text-5xl font-medium mt-3 text-ivory">Inside the studio</h2>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="relative group overflow-hidden aspect-[4/3] border border-darkBorder">
-                <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80" alt="Main Training Floor" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-                <div class="absolute inset-0 bg-gradient-to-t from-matteBlack via-transparent opacity-80"></div>
-                <div class="absolute bottom-4 left-4 font-condensed text-xl uppercase tracking-wider text-offWhite">Main Lifting Floor</div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="relative group overflow-hidden aspect-[4/3]">
+                <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80" alt="Main lifting floor" class="w-full h-full object-cover gold-photo group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-ink via-transparent opacity-80"></div>
+                <div class="absolute bottom-4 left-4 font-display text-lg text-ivory">Main Lifting Floor</div>
             </div>
-
-            <div class="relative group overflow-hidden aspect-[4/3] border border-darkBorder">
-                <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80" alt="Dumbbell Rack" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-                <div class="absolute inset-0 bg-gradient-to-t from-matteBlack via-transparent opacity-80"></div>
-                <div class="absolute bottom-4 left-4 font-condensed text-xl uppercase tracking-wider text-offWhite">Urethane Dumbbell Rack</div>
+            <div class="relative group overflow-hidden aspect-[4/3]">
+                <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80" alt="Dumbbell rack" class="w-full h-full object-cover gold-photo group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-ink via-transparent opacity-80"></div>
+                <div class="absolute bottom-4 left-4 font-display text-lg text-ivory">Free Weight Wall</div>
             </div>
-
-            <div class="relative group overflow-hidden aspect-[4/3] border border-darkBorder">
-                <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=800&q=80" alt="Recovery Zone" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-                <div class="absolute inset-0 bg-gradient-to-t from-matteBlack via-transparent opacity-80"></div>
-                <div class="absolute bottom-4 left-4 font-condensed text-xl uppercase tracking-wider text-offWhite">Infrared Sauna & Ice Baths</div>
+            <div class="relative group overflow-hidden aspect-[4/3]">
+                <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=800&q=80" alt="Recovery zone" class="w-full h-full object-cover gold-photo group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-ink via-transparent opacity-80"></div>
+                <div class="absolute bottom-4 left-4 font-display text-lg text-ivory">Sauna & Ice Baths</div>
             </div>
-
-            <div class="relative group overflow-hidden aspect-[4/3] border border-darkBorder">
-                <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&w=800&q=80" alt="Turf Track" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-                <div class="absolute inset-0 bg-gradient-to-t from-matteBlack via-transparent opacity-80"></div>
-                <div class="absolute bottom-4 left-4 font-condensed text-xl uppercase tracking-wider text-offWhite">25m Astroturf Sled Track</div>
+            <div class="relative group overflow-hidden aspect-[4/3]">
+                <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&w=800&q=80" alt="Turf track" class="w-full h-full object-cover gold-photo group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-ink via-transparent opacity-80"></div>
+                <div class="absolute bottom-4 left-4 font-display text-lg text-ivory">Sled Track</div>
             </div>
-
-            <div class="relative group overflow-hidden aspect-[4/3] border border-darkBorder">
-                <img src="https://images.unsplash.com/photo-1507398941214-572c25f4b1dc?auto=format&fit=crop&w=800&q=80" alt="Locker Rooms" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-                <div class="absolute inset-0 bg-gradient-to-t from-matteBlack via-transparent opacity-80"></div>
-                <div class="absolute bottom-4 left-4 font-condensed text-xl uppercase tracking-wider text-offWhite">Luxury Changing Rooms</div>
+            <div class="relative group overflow-hidden aspect-[4/3]">
+                <img src="https://images.unsplash.com/photo-1507398941214-572c25f4b1dc?auto=format&fit=crop&w=800&q=80" alt="Changing rooms" class="w-full h-full object-cover gold-photo group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-ink via-transparent opacity-80"></div>
+                <div class="absolute bottom-4 left-4 font-display text-lg text-ivory">Changing Rooms</div>
             </div>
-
-            <div class="relative group overflow-hidden aspect-[4/3] border border-darkBorder">
-                <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80" alt="Lounge Area" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-                <div class="absolute inset-0 bg-gradient-to-t from-matteBlack via-transparent opacity-80"></div>
-                <div class="absolute bottom-4 left-4 font-condensed text-xl uppercase tracking-wider text-offWhite">Organic Protein Bar & Lounge</div>
+            <div class="relative group overflow-hidden aspect-[4/3]">
+                <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80" alt="Lounge area" class="w-full h-full object-cover gold-photo group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-ink via-transparent opacity-80"></div>
+                <div class="absolute bottom-4 left-4 font-display text-lg text-ivory">Protein Bar & Lounge</div>
             </div>
         </div>
     </section>
 
-    <section class="py-24 bg-darkCard border-t border-b border-darkBorder">
+    <section class="py-24 bg-panel border-t border-b border-line">
         <div class="max-w-7xl mx-auto px-4 sm:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="uppercase tracking-[0.3em] text-xs text-coralOrange font-bold">Community Voice</span>
-                <h2 class="font-condensed text-5xl sm:text-6xl font-extrabold mt-2 mb-4 uppercase">Member Testimonials</h2>
-                <div class="w-16 h-1 bg-coralOrange mx-auto"></div>
+            <div class="max-w-2xl mb-16">
+                <span class="text-xs uppercase tracking-[0.25em] text-gold font-semibold">Community Voice</span>
+                <h2 class="font-display text-4xl sm:text-5xl font-medium mt-3 text-ivory">What members say</h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-matteBlack p-8 border border-darkBorder relative flex flex-col justify-between">
+                <div class="p-8 border border-line flex flex-col justify-between">
                     <div>
-                        <div class="text-coralOrange text-lg mb-4">
+                        <div class="text-gold text-sm mb-4">
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="text-gray-300 text-sm mb-6 leading-relaxed">"Ironbloom completely changed my perspective on fitness. The coaches actually care about your form and progress, unlike commercial mega-gyms."</p>
+                        <p class="text-ivory/90 text-sm mb-6 leading-relaxed">Akhara changed how I think about training. The coaches actually watch your form here, unlike the big commercial gyms.</p>
                     </div>
-                    <div class="flex items-center space-x-4 border-t border-darkBorder pt-4">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Reviewer 1" class="w-12 h-12 rounded-full object-cover border border-coralOrange">
+                    <div class="flex items-center space-x-4 border-t border-line pt-4">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Zara Ahmed" class="w-11 h-11 rounded-full object-cover gold-photo">
                         <div>
-                            <h4 class="font-condensed text-xl font-bold uppercase">Charlotte Vance</h4>
-                            <p class="text-[10px] uppercase tracking-wider text-gray-500 font-mono">Member for 2 Years</p>
+                            <h4 class="font-display text-lg text-ivory">Zara Ahmed</h4>
+                            <p class="text-[10px] uppercase tracking-wider text-muted">Member for 2 years</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-matteBlack p-8 border border-darkBorder relative flex flex-col justify-between">
+                <div class="p-8 border border-line flex flex-col justify-between">
                     <div>
-                        <div class="text-coralOrange text-lg mb-4">
+                        <div class="text-gold text-sm mb-4">
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="text-gray-300 text-sm mb-6 leading-relaxed">"The combination of heavy strength work and the post-workout ice bath is unmatched in London. Absolute top-tier facility."</p>
+                        <p class="text-ivory/90 text-sm mb-6 leading-relaxed">Heavy strength work followed by the ice bath is unmatched anywhere else in Karachi. Genuinely top-tier setup.</p>
                     </div>
-                    <div class="flex items-center space-x-4 border-t border-darkBorder pt-4">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Reviewer 2" class="w-12 h-12 rounded-full object-cover border border-coralOrange">
+                    <div class="flex items-center space-x-4 border-t border-line pt-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Fahad Ansari" class="w-11 h-11 rounded-full object-cover gold-photo">
                         <div>
-                            <h4 class="font-condensed text-xl font-bold uppercase">Oliver Sterling</h4>
-                            <p class="text-[10px] uppercase tracking-wider text-gray-500 font-mono">Member for 3 Years</p>
+                            <h4 class="font-display text-lg text-ivory">Fahad Ansari</h4>
+                            <p class="text-[10px] uppercase tracking-wider text-muted">Member for 3 years</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-matteBlack p-8 border border-darkBorder relative flex flex-col justify-between">
+                <div class="p-8 border border-line flex flex-col justify-between">
                     <div>
-                        <div class="text-coralOrange text-lg mb-4">
+                        <div class="text-gold text-sm mb-4">
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="text-gray-300 text-sm mb-6 leading-relaxed">"Small class sizes mean you never get lost in the crowd. Marcus and the team push you safely to your absolute maximum."</p>
+                        <p class="text-ivory/90 text-sm mb-6 leading-relaxed">Small classes mean you never disappear into the crowd. Bilal and the team push you safely, to your actual max.</p>
                     </div>
-                    <div class="flex items-center space-x-4 border-t border-darkBorder pt-4">
-                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=200&q=80" alt="Reviewer 3" class="w-12 h-12 rounded-full object-cover border border-coralOrange">
+                    <div class="flex items-center space-x-4 border-t border-line pt-4">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=200&q=80" alt="Mahnoor Siddiqui" class="w-11 h-11 rounded-full object-cover gold-photo">
                         <div>
-                            <h4 class="font-condensed text-xl font-bold uppercase">Maya Sen</h4>
-                            <p class="text-[10px] uppercase tracking-wider text-gray-500 font-mono">Member for 1 Year</p>
+                            <h4 class="font-display text-lg text-ivory">Mahnoor Siddiqui</h4>
+                            <p class="text-[10px] uppercase tracking-wider text-muted">Member for 1 year</p>
                         </div>
                     </div>
                 </div>
@@ -700,312 +621,265 @@
     </section>
 
     <section id="trial" class="py-24 max-w-7xl mx-auto px-4 sm:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
             <div>
-                <span class="uppercase tracking-[0.3em] text-xs text-coralOrange font-bold">Risk-Free Start</span>
-                <h2 class="font-condensed text-5xl sm:text-6xl font-extrabold mt-2 mb-6 uppercase">Claim Your Free Trial Class</h2>
-                <p class="text-gray-400 text-sm mb-8 leading-relaxed">Experience an Ironbloom class on us. Fill out the form to secure your spot with one of our elite coaches. No obligation, just high-level training.</p>
+                <span class="text-xs uppercase tracking-[0.25em] text-gold font-semibold">Risk-Free Start</span>
+                <h2 class="font-display text-4xl sm:text-5xl font-medium mt-3 mb-6 text-ivory">Claim your free trial class</h2>
+                <p class="text-muted text-sm mb-8 leading-relaxed">Train with us once, on the house. Fill out the form and one of our coaches will confirm your spot within two hours.</p>
 
-                <div class="bg-darkCard p-6 border border-darkBorder space-y-4">
-                    <h3 class="font-condensed text-2xl font-bold uppercase text-coralOrange"><i class="fa-solid fa-backpack mr-2"></i> What To Bring</h3>
-                    <ul class="space-y-2 text-xs text-gray-300">
-                        <li><i class="fa-solid fa-check text-coralOrange mr-2"></i> Clean training shoes & comfortable workout apparel</li>
-                        <li><i class="fa-solid fa-check text-coralOrange mr-2"></i> Reusable water bottle (refill stations on site)</li>
-                        <li><i class="fa-solid fa-check text-coralOrange mr-2"></i> Positive attitude and readiness to sweat</li>
-                        <li><i class="fa-solid fa-check text-coralOrange mr-2"></i> Lockers, towels, and showers provided free</li>
+                <div class="border border-line p-6 space-y-4">
+                    <h3 class="font-display text-xl text-gold"><i class="fa-solid fa-backpack mr-2"></i> What to bring</h3>
+                    <ul class="space-y-2 text-xs text-ivory/90">
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Clean training shoes and comfortable workout clothes</li>
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> A reusable water bottle — refill stations on site</li>
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Readiness to sweat</li>
+                        <li><i class="fa-solid fa-check text-gold mr-2"></i> Lockers, towels and showers provided free</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="bg-darkCard p-8 sm:p-10 border border-darkBorder shadow-2xl">
+            <div class="bg-panel p-8 sm:p-10 border border-line">
                 <form id="trial-form" class="space-y-4">
                     <div>
-                        <label class="block text-xs uppercase tracking-wider text-gray-400 mb-1 font-semibold">Full Name</label>
-                        <input type="text" id="form-name" required class="w-full bg-matteBlack border border-darkBorder px-4 py-3 text-sm text-offWhite focus:outline-none focus:border-coralOrange transition">
+                        <label class="block text-xs uppercase tracking-wider text-muted mb-1 font-medium">Full Name</label>
+                        <input type="text" id="form-name" required class="w-full bg-ink border border-line px-4 py-3 text-sm text-ivory focus:outline-none focus:border-gold transition">
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
-                            <label class="block text-xs uppercase tracking-wider text-gray-400 mb-1 font-semibold">Email</label>
-                            <input type="email" id="form-email" required class="w-full bg-matteBlack border border-darkBorder px-4 py-3 text-sm text-offWhite focus:outline-none focus:border-coralOrange transition">
+                            <label class="block text-xs uppercase tracking-wider text-muted mb-1 font-medium">Email</label>
+                            <input type="email" id="form-email" required class="w-full bg-ink border border-line px-4 py-3 text-sm text-ivory focus:outline-none focus:border-gold transition">
                         </div>
                         <div>
-                            <label class="block text-xs uppercase tracking-wider text-gray-400 mb-1 font-semibold">Phone</label>
-                            <input type="tel" required class="w-full bg-matteBlack border border-darkBorder px-4 py-3 text-sm text-offWhite focus:outline-none focus:border-coralOrange transition">
+                            <label class="block text-xs uppercase tracking-wider text-muted mb-1 font-medium">Phone</label>
+                            <input type="tel" placeholder="03xx xxxxxxx" required class="w-full bg-ink border border-line px-4 py-3 text-sm text-ivory focus:outline-none focus:border-gold transition">
                         </div>
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
-                            <label class="block text-xs uppercase tracking-wider text-gray-400 mb-1 font-semibold">Preferred Class</label>
-                            <select class="w-full bg-matteBlack border border-darkBorder px-4 py-3 text-sm text-offWhite focus:outline-none focus:border-coralOrange transition">
+                            <label class="block text-xs uppercase tracking-wider text-muted mb-1 font-medium">Preferred Class</label>
+                            <select class="w-full bg-ink border border-line px-4 py-3 text-sm text-ivory focus:outline-none focus:border-gold transition">
                                 <option>Strength & Power</option>
-                                <option>Metabolic HIIT</option>
+                                <option>Metabolic Conditioning</option>
                                 <option>Mobility & Flow</option>
                                 <option>Technical Boxing</option>
                                 <option>Power Spin</option>
                             </select>
                         </div>
                         <div>
-                            <label class="block text-xs uppercase tracking-wider text-gray-400 mb-1 font-semibold">Preferred Date</label>
-                            <input type="date" required class="w-full bg-matteBlack border border-darkBorder px-4 py-3 text-sm text-offWhite focus:outline-none focus:border-coralOrange transition">
+                            <label class="block text-xs uppercase tracking-wider text-muted mb-1 font-medium">Preferred Date</label>
+                            <input type="date" required class="w-full bg-ink border border-line px-4 py-3 text-sm text-ivory focus:outline-none focus:border-gold transition">
                         </div>
                     </div>
-                    <button type="submit" class="w-full py-4 bg-coralOrange text-matteBlack font-extrabold uppercase text-xs tracking-widest hover:bg-coralHover hover:text-white transition shadow-lg shadow-coralOrange/30">Book Free Class Now</button>
+                    <button type="submit" class="w-full py-4 bg-gold text-ink font-semibold uppercase text-xs tracking-widest hover:bg-goldBright transition">Book Free Class</button>
                 </form>
             </div>
         </div>
     </section>
 
     <div id="premium-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden">
-        <div class="bg-darkCard border-2 border-coralOrange p-8 sm:p-10 max-w-md w-full mx-4 text-center relative shadow-2xl glow-effect">
-            <div class="w-16 h-16 bg-coralOrange text-matteBlack rounded-full flex items-center justify-center text-3xl mx-auto mb-6 shadow-lg shadow-coralOrange/40">
-                <i class="fa-solid fa-crown"></i>
+        <div class="bg-panel border-2 border-gold p-8 sm:p-10 max-w-md w-full mx-4 text-center relative">
+            <div class="w-14 h-14 border border-gold text-gold rounded-full flex items-center justify-center text-2xl mx-auto mb-6">
+                <i class="fa-solid fa-check"></i>
             </div>
-            <span class="text-[10px] uppercase tracking-[0.3em] text-coralOrange font-bold block mb-2">Ironbloom Exclusive</span>
-            <h3 class="font-condensed text-4xl font-extrabold uppercase mb-4 text-offWhite">Welcome to Premium!</h3>
-            <p class="text-gray-300 text-sm leading-relaxed mb-8">Aap ka trial class request successful ho gaya hai! Hum ne aap ko confirmation email kar di hai. Jaldi hi studio mein milte hain!</p>
-            <button id="close-modal-btn" class="w-full py-4 bg-coralOrange text-matteBlack font-extrabold uppercase text-xs tracking-widest hover:bg-coralHover hover:text-white transition shadow-lg shadow-coralOrange/30">Got It, Thanks!</button>
+            <span class="text-[10px] uppercase tracking-[0.25em] text-gold font-semibold block mb-2">Booking Confirmed</span>
+            <h3 class="font-display text-3xl mb-4 text-ivory">Welcome to Akhara</h3>
+            <p class="text-muted text-sm leading-relaxed mb-8">Aap ka trial class request receive ho gaya hai. Confirmation email jaldi bhej di jayegi — studio mein jald milte hain.</p>
+            <button id="close-modal-btn" class="w-full py-4 bg-gold text-ink font-semibold uppercase text-xs tracking-widest hover:bg-goldBright transition">Got It</button>
         </div>
     </div>
 
-    <section class="py-16 bg-darkCard border-t border-b border-darkBorder">
+    <section class="py-16 bg-panel border-t border-b border-line">
         <div class="max-w-7xl mx-auto px-4 sm:px-8">
-            <div class="flex flex-col lg:flex-row justify-between items-center mb-10 gap-4">
+            <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-10 gap-4">
                 <div>
-                    <span class="uppercase tracking-[0.3em] text-xs text-coralOrange font-bold">Beyond The Gym</span>
-                    <h2 class="font-condensed text-4xl sm:text-5xl font-extrabold uppercase mt-1">Community & Upcoming Events</h2>
+                    <span class="text-xs uppercase tracking-[0.25em] text-gold font-semibold">Beyond The Studio</span>
+                    <h2 class="font-display text-3xl sm:text-4xl font-medium mt-1 text-ivory">Community & upcoming events</h2>
                 </div>
-                <p class="text-gray-400 text-xs max-w-md">We believe training extends beyond the studio walls. Join our community workshops, internal competitions, and outdoor endurance challenges.</p>
+                <p class="text-muted text-xs max-w-md">Training extends beyond the floor. Join our workshops, internal meets and outdoor challenges.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-matteBlack p-6 border border-darkBorder flex justify-between items-center hover:border-coralOrange transition">
+                <div class="p-6 border border-line flex justify-between items-center hover:border-gold transition">
                     <div>
-                        <span class="text-[10px] uppercase tracking-widest text-coralOrange font-bold font-mono">Oct 14, 2026</span>
-                        <h4 class="font-condensed text-2xl font-bold uppercase mt-1">Ironbloom Summer Throwdown</h4>
+                        <span class="text-[10px] uppercase tracking-widest text-gold font-semibold">Oct 14, 2026</span>
+                        <h4 class="font-display text-xl mt-1 text-ivory">Iron Jirga</h4>
                     </div>
-                    <span class="text-xs bg-darkCard px-3 py-1.5 border border-darkBorder font-bold uppercase">Internal Comp</span>
+                    <span class="text-xs border border-line px-3 py-1.5 text-muted">Internal Meet</span>
                 </div>
-
-                <div class="bg-matteBlack p-6 border border-darkBorder flex justify-between items-center hover:border-coralOrange transition">
+                <div class="p-6 border border-line flex justify-between items-center hover:border-gold transition">
                     <div>
-                        <span class="text-[10px] uppercase tracking-widest text-coralOrange font-bold font-mono">Nov 02, 2026</span>
-                        <h4 class="font-condensed text-2xl font-bold uppercase mt-1">Advanced Macro Nutrition Masterclass</h4>
+                        <span class="text-[10px] uppercase tracking-widest text-gold font-semibold">Nov 02, 2026</span>
+                        <h4 class="font-display text-xl mt-1 text-ivory">Sehat Nutrition Masterclass</h4>
                     </div>
-                    <span class="text-xs bg-darkCard px-3 py-1.5 border border-darkBorder font-bold uppercase">Workshop</span>
+                    <span class="text-xs border border-line px-3 py-1.5 text-muted">Workshop</span>
                 </div>
-
-                <div class="bg-matteBlack p-6 border border-darkBorder flex justify-between items-center hover:border-coralOrange transition">
+                <div class="p-6 border border-line flex justify-between items-center hover:border-gold transition">
                     <div>
-                        <span class="text-[10px] uppercase tracking-widest text-coralOrange font-bold font-mono">Nov 20, 2026</span>
-                        <h4 class="font-condensed text-2xl font-bold uppercase mt-1">Hyrox Simulation Event</h4>
+                        <span class="text-[10px] uppercase tracking-widest text-gold font-semibold">Nov 20, 2026</span>
+                        <h4 class="font-display text-xl mt-1 text-ivory">Hyrox Karachi Simulation</h4>
                     </div>
-                    <span class="text-xs bg-darkCard px-3 py-1.5 border border-darkBorder font-bold uppercase">Challenge</span>
+                    <span class="text-xs border border-line px-3 py-1.5 text-muted">Challenge</span>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="py-24 max-w-4xl mx-auto px-4 sm:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-16">
-            <span class="uppercase tracking-[0.3em] text-xs text-coralOrange font-bold">Got Questions</span>
-            <h2 class="font-condensed text-5xl sm:text-6xl font-extrabold mt-2 mb-4 uppercase">Frequently Asked Questions</h2>
-            <div class="w-16 h-1 bg-coralOrange mx-auto"></div>
+        <div class="max-w-2xl mb-16">
+            <span class="text-xs uppercase tracking-[0.25em] text-gold font-semibold">Got Questions</span>
+            <h2 class="font-display text-4xl sm:text-5xl font-medium mt-3 text-ivory">Frequently asked</h2>
         </div>
 
-        <div class="space-y-4">
-            <details class="bg-darkCard border border-darkBorder p-6 group">
-                <summary class="font-condensed text-2xl font-bold uppercase cursor-pointer flex justify-between items-center">
+        <div class="space-y-3">
+            <details class="border border-line p-6 group">
+                <summary class="font-display text-xl cursor-pointer flex justify-between items-center text-ivory">
                     What should I wear and bring to my first class?
-                    <i class="fa-solid fa-chevron-down text-sm group-open:rotate-180 transition text-coralOrange"></i>
+                    <i class="fa-solid fa-chevron-down text-sm group-open:rotate-180 transition text-gold"></i>
                 </summary>
-                <p class="text-gray-400 text-sm mt-4 leading-relaxed">Wear comfortable athletic clothing and clean trainers suitable for indoor lifting and movement. Bring a water bottle; we provide top-tier lockers, towels, and showers free of charge.</p>
+                <p class="text-muted text-sm mt-4 leading-relaxed">Comfortable athletic clothing and clean trainers suitable for indoor lifting. Bring a water bottle — lockers, towels and showers are provided free.</p>
             </details>
-
-            <details class="bg-darkCard border border-darkBorder p-6 group">
-                <summary class="font-condensed text-2xl font-bold uppercase cursor-pointer flex justify-between items-center">
+            <details class="border border-line p-6 group">
+                <summary class="font-display text-xl cursor-pointer flex justify-between items-center text-ivory">
                     Are the classes beginner friendly?
-                    <i class="fa-solid fa-chevron-down text-sm group-open:rotate-180 transition text-coralOrange"></i>
+                    <i class="fa-solid fa-chevron-down text-sm group-open:rotate-180 transition text-gold"></i>
                 </summary>
-                <p class="text-gray-400 text-sm mt-4 leading-relaxed">Absolutely. Our expert coaches scale every exercise according to your current fitness level, ensuring you get a safe, effective workout regardless of your experience.</p>
+                <p class="text-muted text-sm mt-4 leading-relaxed">Yes. Every exercise is scaled to your current level, so you get a safe, effective session regardless of experience.</p>
             </details>
-
-            <details class="bg-darkCard border border-darkBorder p-6 group">
-                <summary class="font-condensed text-2xl font-bold uppercase cursor-pointer flex justify-between items-center">
+            <details class="border border-line p-6 group">
+                <summary class="font-display text-xl cursor-pointer flex justify-between items-center text-ivory">
                     What is the membership cancellation policy?
-                    <i class="fa-solid fa-chevron-down text-sm group-open:rotate-180 transition text-coralOrange"></i>
+                    <i class="fa-solid fa-chevron-down text-sm group-open:rotate-180 transition text-gold"></i>
                 </summary>
-                <p class="text-gray-400 text-sm mt-4 leading-relaxed">Monthly memberships require a standard 30-day notice period to cancel. Annual memberships are non-refundable but can be paused for medical or travel reasons up to 60 days per year.</p>
+                <p class="text-muted text-sm mt-4 leading-relaxed">Monthly memberships require 30 days' notice to cancel. Annual memberships are non-refundable but can be paused for up to 60 days a year for medical or travel reasons.</p>
             </details>
-
-            <details class="bg-darkCard border border-darkBorder p-6 group">
-                <summary class="font-condensed text-2xl font-bold uppercase cursor-pointer flex justify-between items-center">
-                    Do you provide nutritional guidance?
-                    <i class="fa-solid fa-chevron-down text-sm group-open:rotate-180 transition text-coralOrange"></i>
+            <details class="border border-line p-6 group">
+                <summary class="font-display text-xl cursor-pointer flex justify-between items-center text-ivory">
+                    Do you provide nutrition guidance?
+                    <i class="fa-solid fa-chevron-down text-sm group-open:rotate-180 transition text-gold"></i>
                 </summary>
-                <p class="text-gray-400 text-sm mt-4 leading-relaxed">Yes! All unlimited and annual membership tiers include quarterly body composition scans and baseline nutritional macro recommendations from our certified in-house coaches.</p>
+                <p class="text-muted text-sm mt-4 leading-relaxed">Yes — Unlimited and Annual members get quarterly body composition scans and baseline macro guidance from our in-house coaches.</p>
             </details>
-
-            <details class="bg-darkCard border border-darkBorder p-6 group">
-                <summary class="font-condensed text-2xl font-bold uppercase cursor-pointer flex justify-between items-center">
+            <details class="border border-line p-6 group">
+                <summary class="font-display text-xl cursor-pointer flex justify-between items-center text-ivory">
                     How do I book my free trial class?
-                    <i class="fa-solid fa-chevron-down text-sm group-open:rotate-180 transition text-coralOrange"></i>
+                    <i class="fa-solid fa-chevron-down text-sm group-open:rotate-180 transition text-gold"></i>
                 </summary>
-                <p class="text-gray-400 text-sm mt-4 leading-relaxed">Simply fill out the free trial booking form on this page with your preferred class and date. Our team will contact you within 2 hours to confirm your reservation.</p>
+                <p class="text-muted text-sm mt-4 leading-relaxed">Fill out the trial booking form above with your preferred class and date. Our team confirms your reservation within two hours.</p>
             </details>
-        </div>
-    </section>
-
-    <section class="py-20 bg-darkCard border-t border-b border-darkBorder">
-        <div class="max-w-7xl mx-auto px-4 sm:px-8 text-center mb-10">
-            <span class="uppercase tracking-[0.3em] text-xs text-coralOrange font-bold font-mono">@IRONBLOOM.LDN</span>
-            <h2 class="font-condensed text-4xl sm:text-5xl font-extrabold uppercase mt-1">Follow Our Journey On Instagram</h2>
-        </div>
-
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-7xl mx-auto px-4 sm:px-8">
-            <div class="relative group overflow-hidden aspect-square border border-darkBorder">
-                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=500&q=80" alt="IG 1" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                <div class="absolute inset-0 bg-matteBlack/70 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-offWhite font-condensed text-2xl uppercase tracking-wider">
-                    <i class="fa-brands fa-instagram text-coralOrange mr-2"></i> Ironbloom
-                </div>
-            </div>
-            <div class="relative group overflow-hidden aspect-square border border-darkBorder">
-                <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=500&q=80" alt="IG 2" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                <div class="absolute inset-0 bg-matteBlack/70 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-offWhite font-condensed text-2xl uppercase tracking-wider">
-                    <i class="fa-brands fa-instagram text-coralOrange mr-2"></i> Ironbloom
-                </div>
-            </div>
-            <div class="relative group overflow-hidden aspect-square border border-darkBorder">
-                <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=500&q=80" alt="IG 3" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                <div class="absolute inset-0 bg-matteBlack/70 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-offWhite font-condensed text-2xl uppercase tracking-wider">
-                    <i class="fa-brands fa-instagram text-coralOrange mr-2"></i> Ironbloom
-                </div>
-            </div>
-            <div class="relative group overflow-hidden aspect-square border border-darkBorder">
-                <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=500&q=80" alt="IG 4" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                <div class="absolute inset-0 bg-matteBlack/70 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-offWhite font-condensed text-2xl uppercase tracking-wider">
-                    <i class="fa-brands fa-instagram text-coralOrange mr-2"></i> Ironbloom
-                </div>
-            </div>
         </div>
     </section>
 
     <section id="contact" class="py-24 max-w-7xl mx-auto px-4 sm:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-16">
-            <span class="uppercase tracking-[0.3em] text-xs text-coralOrange font-bold">Find Us</span>
-            <h2 class="font-condensed text-5xl sm:text-6xl font-extrabold mt-2 mb-4 uppercase">Studio Location & Hours</h2>
-            <div class="w-16 h-1 bg-coralOrange mx-auto"></div>
+        <div class="max-w-2xl mb-16">
+            <span class="text-xs uppercase tracking-[0.25em] text-gold font-semibold">Find Us</span>
+            <h2 class="font-display text-4xl sm:text-5xl font-medium mt-3 text-ivory">Studio location & hours</h2>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div class="space-y-6">
-                <div class="bg-darkCard p-6 border border-darkBorder flex items-start space-x-4">
-                    <div class="w-12 h-12 bg-matteBlack text-coralOrange flex items-center justify-center shrink-0 border border-darkBorder text-lg"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="space-y-5">
+                <div class="border border-line p-6 flex items-start space-x-4">
+                    <i class="fa-solid fa-location-dot text-gold text-lg mt-1"></i>
                     <div>
-                        <h4 class="font-condensed text-xl font-bold uppercase">London Studio</h4>
-                        <p class="text-gray-400 text-xs mt-1">45 Shoreditch High St, London E1 6JJ, United Kingdom</p>
+                        <h4 class="font-display text-lg text-ivory">Karachi Studio</h4>
+                        <p class="text-muted text-xs mt-1">12-C, Khayaban-e-Ittehad, DHA Phase 6, Karachi, Pakistan</p>
                     </div>
                 </div>
-
-                <div class="bg-darkCard p-6 border border-darkBorder flex items-start space-x-4">
-                    <div class="w-12 h-12 bg-matteBlack text-coralOrange flex items-center justify-center shrink-0 border border-darkBorder text-lg"><i class="fa-solid fa-phone"></i></div>
+                <div class="border border-line p-6 flex items-start space-x-4">
+                    <i class="fa-solid fa-phone text-gold text-lg mt-1"></i>
                     <div>
-                        <h4 class="font-condensed text-xl font-bold uppercase">Phone Contact</h4>
-                        <p class="text-gray-400 text-xs mt-1">+44 20 8586 7791</p>
+                        <h4 class="font-display text-lg text-ivory">Phone Contact</h4>
+                        <p class="text-muted text-xs mt-1">+92 300 8467 213</p>
                     </div>
                 </div>
-
-                <div class="bg-darkCard p-6 border border-darkBorder flex items-start space-x-4">
-                    <div class="w-12 h-12 bg-matteBlack text-coralOrange flex items-center justify-center shrink-0 border border-darkBorder text-lg"><i class="fa-solid fa-envelope"></i></div>
+                <div class="border border-line p-6 flex items-start space-x-4">
+                    <i class="fa-solid fa-envelope text-gold text-lg mt-1"></i>
                     <div>
-                        <h4 class="font-condensed text-xl font-bold uppercase">Email Enquiries</h4>
-                        <p class="text-gray-400 text-xs mt-1">concierge@ironbloomstudio.co.uk</p>
+                        <h4 class="font-display text-lg text-ivory">Email Enquiries</h4>
+                        <p class="text-muted text-xs mt-1">hello@akharastrength.pk</p>
                     </div>
                 </div>
-
-                <div class="bg-darkCard p-6 border border-darkBorder">
-                    <h4 class="font-condensed text-xl font-bold uppercase mb-4 text-coralOrange">Studio Hours</h4>
-                    <div class="space-y-2 text-xs text-gray-400">
-                        <div class="flex justify-between border-b border-darkBorder pb-2"><span>Monday – Friday</span> <span class="text-offWhite font-bold">06:00 AM – 09:30 PM</span></div>
-                        <div class="flex justify-between border-b border-darkBorder pb-2"><span>Saturday</span> <span class="text-offWhite font-bold">07:30 AM – 06:00 PM</span></div>
-                        <div class="flex justify-between pt-1"><span>Sunday</span> <span class="text-offWhite font-bold">08:00 AM – 04:00 PM</span></div>
+                <div class="border border-line p-6">
+                    <h4 class="font-display text-lg text-gold mb-4">Studio Hours</h4>
+                    <div class="space-y-2 text-xs text-muted">
+                        <div class="flex justify-between border-b border-line pb-2"><span>Monday – Friday</span> <span class="text-ivory font-semibold">6:00 AM – 10:30 PM</span></div>
+                        <div class="flex justify-between border-b border-line pb-2"><span>Saturday</span> <span class="text-ivory font-semibold">7:30 AM – 8:00 PM</span></div>
+                        <div class="flex justify-between pt-1"><span>Sunday</span> <span class="text-ivory font-semibold">9:00 AM – 5:00 PM</span></div>
                     </div>
                 </div>
             </div>
 
-            <div class="bg-darkCard border border-darkBorder relative min-h-[450px] flex items-center justify-center overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1000&q=80" alt="London Map Placeholder" class="w-full h-full object-cover brightness-50 opacity-60">
-                <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-6 bg-matteBlack/40">
-                    <div class="w-16 h-16 bg-coralOrange text-matteBlack rounded-full flex items-center justify-center text-2xl shadow-2xl mb-4 animate-bounce">
+            <div class="border border-line relative min-h-[420px] flex items-center justify-center overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1602740337312-e28c0b7d27f9?auto=format&fit=crop&w=1000&q=80" alt="Clifton, Karachi skyline" class="w-full h-full object-cover gold-photo opacity-70">
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-6 bg-ink/40">
+                    <div class="w-14 h-14 border border-gold text-gold rounded-full flex items-center justify-center text-xl mb-4">
                         <i class="fa-solid fa-map-pin"></i>
                     </div>
-                    <h3 class="font-condensed text-3xl font-bold uppercase text-offWhite">Shoreditch, London</h3>
-                    <p class="text-gray-300 text-xs max-w-xs mt-2">Located 3 minutes walk from Shoreditch High Street Station.</p>
+                    <h3 class="font-display text-2xl text-ivory">DHA Phase 6, Karachi</h3>
+                    <p class="text-muted text-xs max-w-xs mt-2">Five minutes from Khayaban-e-Sehar, next to Do Darya.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-darkCard text-gray-400 pt-16 pb-12 border-t border-darkBorder relative">
+    <footer class="bg-panel text-muted pt-16 pb-10 border-t border-line relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-8 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             <div>
                 <div class="flex items-center space-x-3 mb-4">
-                    <div class="w-8 h-8 bg-matteBlack border border-coralOrange/50 flex items-center justify-center">
-                        <svg class="w-4 h-4 text-coralOrange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M6 4v16M18 4v16M2 8h4M2 16h4M18 8h4M18 16h4M6 12h12"></path>
-                        </svg>
-                    </div>
-                    <span class="font-condensed text-3xl tracking-wider text-offWhite uppercase font-bold">Iron<span class="text-coralOrange">bloom</span></span>
+                    <svg class="w-7 h-7 text-gold" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25 25H75L58 55L75 85H25L42 55L25 25Z" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="font-display text-2xl text-ivory">Akhara</span>
                 </div>
-                <p class="text-xs text-gray-400 leading-relaxed mb-6">London’s boutique strength & conditioning studio est. 2019. Forging high-performance bodies and an unstoppable training community.</p>
-                <div class="flex space-x-4 text-offWhite">
-                    <a href="#" class="w-9 h-9 bg-matteBlack border border-darkBorder flex items-center justify-center hover:bg-coralOrange hover:text-matteBlack transition"><i class="fa-brands fa-instagram text-xs"></i></a>
-                    <a href="#" class="w-9 h-9 bg-matteBlack border border-darkBorder flex items-center justify-center hover:bg-coralOrange hover:text-matteBlack transition"><i class="fa-brands fa-facebook-f text-xs"></i></a>
-                    <a href="#" class="w-9 h-9 bg-matteBlack border border-darkBorder flex items-center justify-center hover:bg-coralOrange hover:text-matteBlack transition"><i class="fa-brands fa-youtube text-xs"></i></a>
+                <p class="text-xs leading-relaxed mb-6">Karachi's boutique strength and conditioning studio, est. 2020 in DHA Phase 6. Taaqat ka akhara.</p>
+                <div class="flex space-x-3">
+                    <a href="#" class="w-9 h-9 border border-line flex items-center justify-center hover:border-gold hover:text-gold transition"><i class="fa-brands fa-instagram text-xs"></i></a>
+                    <a href="#" class="w-9 h-9 border border-line flex items-center justify-center hover:border-gold hover:text-gold transition"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+                    <a href="#" class="w-9 h-9 border border-line flex items-center justify-center hover:border-gold hover:text-gold transition"><i class="fa-brands fa-youtube text-xs"></i></a>
                 </div>
             </div>
 
             <div>
-                <h4 class="text-offWhite uppercase font-condensed text-xl tracking-wider font-bold mb-4">Training Classes</h4>
+                <h4 class="text-ivory font-display text-lg mb-4">Classes</h4>
                 <ul class="space-y-2 text-xs">
-                    <li><a href="#classes" class="hover:text-coralOrange transition">Strength & Power</a></li>
-                    <li><a href="#classes" class="hover:text-coralOrange transition">Metabolic HIIT</a></li>
-                    <li><a href="#classes" class="hover:text-coralOrange transition">Mobility & Flow</a></li>
-                    <li><a href="#classes" class="hover:text-coralOrange transition">Technical Boxing</a></li>
-                    <li><a href="#classes" class="hover:text-coralOrange transition">Power Spin</a></li>
+                    <li><a href="#classes" class="hover:text-gold transition">Strength & Power</a></li>
+                    <li><a href="#classes" class="hover:text-gold transition">Metabolic Conditioning</a></li>
+                    <li><a href="#classes" class="hover:text-gold transition">Mobility & Flow</a></li>
+                    <li><a href="#classes" class="hover:text-gold transition">Technical Boxing</a></li>
+                    <li><a href="#classes" class="hover:text-gold transition">Power Spin</a></li>
                 </ul>
             </div>
 
             <div>
-                <h4 class="text-offWhite uppercase font-condensed text-xl tracking-wider font-bold mb-4">Studio Navigation</h4>
+                <h4 class="text-ivory font-display text-lg mb-4">Studio</h4>
                 <ul class="space-y-2 text-xs">
-                    <li><a href="#home" class="hover:text-coralOrange transition">Home</a></li>
-                    <li><a href="#trainers" class="hover:text-coralOrange transition">Elite Coaches</a></li>
-                    <li><a href="#membership" class="hover:text-coralOrange transition">Membership Plans</a></li>
-                    <li><a href="#results" class="hover:text-coralOrange transition">Member Results</a></li>
-                    <li><a href="#contact" class="hover:text-coralOrange transition">Location & Hours</a></li>
+                    <li><a href="#home" class="hover:text-gold transition">Home</a></li>
+                    <li><a href="#trainers" class="hover:text-gold transition">Coaches</a></li>
+                    <li><a href="#membership" class="hover:text-gold transition">Membership</a></li>
+                    <li><a href="#results" class="hover:text-gold transition">Results</a></li>
+                    <li><a href="#contact" class="hover:text-gold transition">Location & Hours</a></li>
                 </ul>
             </div>
 
             <div>
-                <h4 class="text-offWhite uppercase font-condensed text-xl tracking-wider font-bold mb-4">Newsletter</h4>
-                <p class="text-xs text-gray-400 mb-4">Get weekly training tips, nutrition breakdowns, and workshop invites.</p>
+                <h4 class="text-ivory font-display text-lg mb-4">Newsletter</h4>
+                <p class="text-xs mb-4">Weekly training notes, nutrition breakdowns and workshop invites.</p>
                 <form onsubmit="event.preventDefault(); alert('Subscribed successfully!');" class="space-y-2">
-                    <input type="email" placeholder="Your email address" required class="w-full bg-matteBlack border border-darkBorder px-3 py-2 text-xs text-offWhite placeholder-gray-500 focus:outline-none focus:border-coralOrange">
-                    <button type="submit" class="w-full py-2 bg-coralOrange text-matteBlack text-xs uppercase font-extrabold tracking-widest hover:bg-coralHover hover:text-white transition">Subscribe</button>
+                    <input type="email" placeholder="Your email address" required class="w-full bg-ink border border-line px-3 py-2 text-xs text-ivory placeholder-muted focus:outline-none focus:border-gold">
+                    <button type="submit" class="w-full py-2 bg-gold text-ink text-xs uppercase font-semibold tracking-widest hover:bg-goldBright transition">Subscribe</button>
                 </form>
             </div>
         </div>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-8 border-t border-darkBorder pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500">
-            <p>&copy; 2019–2026 Ironbloom Studio Ltd. All rights reserved. Registered in London, UK.</p>
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 border-t border-line pt-8 flex flex-col sm:flex-row justify-between items-center text-xs">
+            <p>&copy; 2020–2026 Akhara Strength Studio. All rights reserved. Karachi, Pakistan.</p>
             <div class="flex space-x-6 mt-4 sm:mt-0">
-                <a href="#" class="hover:text-coralOrange transition">Privacy Policy</a>
-                <a href="#" class="hover:text-coralOrange transition">Terms of Service</a>
-                <a href="#" class="hover:text-coralOrange transition">Waiver</a>
+                <a href="#" class="hover:text-gold transition">Privacy Policy</a>
+                <a href="#" class="hover:text-gold transition">Terms of Service</a>
+                <a href="#" class="hover:text-gold transition">Waiver</a>
             </div>
         </div>
 
-        <a href="#trial" class="fixed bottom-6 right-6 z-40 bg-coralOrange text-matteBlack w-14 h-14 rounded-full shadow-2xl flex items-center justify-center hover:bg-white transition duration-300 shadow-coralOrange/40" title="Book Free Class">
+        <a href="#trial" class="fixed bottom-6 right-6 z-40 bg-gold text-ink w-14 h-14 rounded-full shadow-2xl flex items-center justify-center hover:bg-goldBright transition duration-300" title="Book Free Class">
             <i class="fa-solid fa-bolt text-lg"></i>
         </a>
     </footer>
@@ -1013,19 +887,14 @@
     <script>
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
 
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Premium Popup Modal Logic
         const trialForm = document.getElementById('trial-form');
         const premiumModal = document.getElementById('premium-modal');
         const closeModalBtn = document.getElementById('close-modal-btn');
 
         trialForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            // Show premium modal
             premiumModal.classList.remove('hidden');
         });
 
@@ -1034,7 +903,6 @@
             trialForm.reset();
         });
 
-        // Close modal if user clicks outside of modal content
         premiumModal.addEventListener('click', (e) => {
             if (e.target === premiumModal) {
                 premiumModal.classList.add('hidden');
@@ -1042,6 +910,5 @@
             }
         });
     </script>
-    <script src="https://cdn.zanderio.ai/widget/loader.js" data-id="wdg_p1RaqvPELS8L9UHrLoajwDof" defer></script>
 </body>
 </html>
